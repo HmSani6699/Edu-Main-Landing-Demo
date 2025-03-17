@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { MdAccessAlarms, MdHeadsetMic, MdWhatsapp } from "react-icons/md";
+import logo from "../../../public/school.png";
 
 const Navber = () => {
   return (
@@ -30,7 +31,25 @@ const Navber = () => {
         </div>
       </div>
       {/* ======> Main navber <====== */}
-      <div>suport</div>
+      <div className="flex items-center justify-between  max-w-[1060px] mx-auto">
+        {/* ====> Edu English Name <==== */}
+        <div className="text-center">
+          <h2 className="text-[37px] font-bold">Pakunda Islamia Madrasa</h2>
+          <p className="font-semibold">Pakunda, Sonargon, Narayongonj</p>
+        </div>
+        {/* ====> Edu Logo <==== */}
+        <div className="w-[135px]">
+          <img src={logo} alt="" />
+        </div>
+        {/* ====> Edu Bangla
+         Name <==== */}
+        <div className="text-center">
+          <h2 className="text-[30px] font-bold">
+            পাকুন্ডা ইসলামিয়া হাফেজিয়া মাদ্রাসা
+          </h2>
+          <p className="font-semibold">পাকুন্ডা, সোনারগাঁ, নারায়ণগঞ্জ</p>
+        </div>
+      </div>
     </div>
   );
 };
