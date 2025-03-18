@@ -1,15 +1,44 @@
-.banner {
-  /* background: red; */
-  color: white;
-  background-image: url("../../../assets/svg/banner.svg");
+.custom_border_radius {
+  background-color: #043334; /* তোমার পছন্দের ব্যাকগ্রাউন্ড */
+  background: linear-gradient(to right, #043334, #005555);
+  padding: 50px 0;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
 }
 
-.banner_box {
-  background: rgb(2, 6, 23);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 6, 23, 1) 6%,
-    rgba(0, 99, 116, 1) 50%,
-    rgba(2, 6, 23, 1) 100%
-  );
+.hero-section {
+  position: relative;
+  background-color: #043334;
+  /* padding: 80px 20px; */
+  text-align: center;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+/* Left person highlight */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(54, 239, 122, 0.7), transparent);
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+/* Right person highlight */
+.hero-section::after {
+  content: "";
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.7), transparent);
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
 }
