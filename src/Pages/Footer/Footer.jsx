@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../assets/images/lg1.png";
+import logo from "../../../public/school.png";
 import { Link } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa6";
 import { IoLogoTwitter } from "react-icons/io5";
@@ -9,7 +9,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="footer_container text-white w-full mt-[200px] relative p-[15px]">
+    <div className="footer_container text-white w-full mt-[200px] relative p-[15px] bg-[#1e567b]">
       <div className="footer_box h-full w-full  top-0 left-0 opacity-[0.30] absolute"></div>
       <div className="max-w-[1280px] mx-auto relative z-10 py-[50px] lg:px-0 px-[15px] lg:flex">
         <div className="lg:w-[60%] md:w-[100%] w-full lg:flex md:flex ">
@@ -17,11 +17,8 @@ const Footer = () => {
           <div className="lg:w-[60%] md:w-[100%] w-full">
             <div className="flex justify-center lg:block ">
               {/* <img className="w-[170px]" src={logo} alt="" /> */}
-              <div className="relative">
-                <img className="w-[170px]" src={logo} alt="" />
-                <h2 className="logo_text text-white text-[31px] absolute top-[-9px] left-0">
-                  Micr
-                </h2>
+              <div className="relative z-20">
+                <img className="w-[100px]" src={logo} alt="" />
               </div>
             </div>
             <p className="text-white text-[18px] mt-[30px] text-center lg:text-left ">

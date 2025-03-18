@@ -34,8 +34,12 @@ const Navber = () => {
       <div className="flex items-center justify-between  max-w-[1060px] mx-auto">
         {/* ====> Edu English Name <==== */}
         <div className="text-center">
-          <h2 className="text-[37px] font-bold">Pakunda Islamia Madrasa</h2>
-          <p className="font-semibold">Pakunda, Sonargon, Narayongonj</p>
+          <h2 className="text-[37px] font-bold text-[#1d5276]">
+            Pakunda Islamia Madrasa
+          </h2>
+          <p className="font-semibold text-[#1d5276]">
+            Pakunda, Sonargon, Narayongonj
+          </p>
         </div>
         {/* ====> Edu Logo <==== */}
         <div className="w-[135px]">
@@ -44,10 +48,12 @@ const Navber = () => {
         {/* ====> Edu Bangla
          Name <==== */}
         <div className="text-center">
-          <h2 className="text-[30px] font-bold">
+          <h2 className="text-[30px] font-bold text-[#1d5276]">
             পাকুন্ডা ইসলামিয়া হাফেজিয়া মাদ্রাসা
           </h2>
-          <p className="font-semibold">পাকুন্ডা, সোনারগাঁ, নারায়ণগঞ্জ</p>
+          <p className="font-semibold text-[#1d5276]">
+            পাকুন্ডা, সোনারগাঁ, নারায়ণগঞ্জ
+          </p>
         </div>
       </div>
     </div>
