@@ -6,6 +6,7 @@ import AllStudents from "./AllStudents/AllStudents";
 import About from "./About/About";
 import ClassCurriculum from "./ClassCurriculum/ClassCurriculum";
 import AllTeacher from "./AllTeacher/AllTeacher";
+import VideoGallery from "./VideoGallery/VideoGallery";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <ClassCurriculum />
       <AllStudents />
       <AllTeacher />
+      <VideoGallery />
     </div>
   );
 };
