@@ -7,7 +7,8 @@ import About from "./About/About";
 import ClassCurriculum from "./ClassCurriculum/ClassCurriculum";
 import AllTeacher from "./AllTeacher/AllTeacher";
 import VideoGallery from "./VideoGallery/VideoGallery";
-import Blog from "./Blog/Blog";
+import Blog from "./Gallery/Gallery";
+import Gallery from "./Gallery/Gallery";
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
       <AllStudents />
       <AllTeacher />
       <VideoGallery />
-      <Blog />
+      <Gallery />
     </div>
   );
 };
