@@ -5,7 +5,7 @@ import student from "../../../../public/student.png";
 
 const AllStudents = () => {
   return (
-    <div className="my-20 max-w-[1471px] mx-auto ">
+    <div className="my-20 max-w-[1471px] mx-auto mt-[100px] ">
       <div>
         <div className="flex items-center justify-center gap-2">
           <img width={30} height={30} alt="icon" src={student} />
