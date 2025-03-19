@@ -3,7 +3,7 @@ import React from "react";
 const StudentCard = () => {
   return (
     <div className="w-[200px] h-[200px] comment_box flex flex-col items-center">
-      <div className="w-[102px] h-[102px] p-1 rounded-full circle_shadow bg-white -mt-12">
+      <div className="w-[102px] h-[102px] p-1 rounded-full circle_shadow bg-white -mt-12 ">
         <img
           alt="img"
           className="rounded-full"
@@ -20,7 +20,7 @@ const StudentCard = () => {
         <div className="flex items-center gap-2 mt-1">
           {/* <img width={14} height={14} alt="icon" src={course_icon} /> */}
           <p className="text-xs leading-[18px] font-[500] text-[#5D636F]">
-            Class Five
+            Class <span className="text-[#07A698]">Five</span>
           </p>
         </div>
       </div>

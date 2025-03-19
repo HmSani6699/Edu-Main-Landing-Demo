@@ -1,8 +1,8 @@
 .footer_container {
-  background-image: url("../../assets/svg/banner.svg");
+  background-image: url("../../../public/footer-bg.png");
 }
 
-.footer_box {
+/* .footer_box {
   background: rgb(2, 6, 23);
   background: linear-gradient(
       90deg,
@@ -11,4 +11,4 @@
       rgba(2, 6, 23, 1) 100%
     ),
     url("../../assets/images/banner.svg");
-}
+} */

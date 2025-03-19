@@ -12,3 +12,7 @@
     background: #f2f4f7;
   }
 }
+
+.teacher_bg_image {
+  background-image: url("../public/teacher-shape.png");
+}

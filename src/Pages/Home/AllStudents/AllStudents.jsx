@@ -2,22 +2,22 @@ import React from "react";
 import StudentCard from "../../../Component/StudentCard/StudentCard";
 import Marquee from "react-fast-marquee";
 import student from "../../../../public/student.png";
+import { BiSolidZap } from "react-icons/bi";
 
 const AllStudents = () => {
   return (
-    <div className="my-20 max-w-[1471px] mx-auto mt-[100px] ">
+    <div className=" max-w-[1471px] mx-auto mt-[100px] ">
       <div>
-        <div className="flex items-center justify-center gap-2">
-          <img width={30} height={30} alt="icon" src={student} />
-          <p className="font-Baloo text-[#1D5276]  text-[30px]  leading-[28px] font-[600]">
-            আমাদের সকল ছাত্রছাত্রী সমূহ
-          </p>
+        <div className="flex items-center justify-center">
+          <button className="bg-white flex p-[5px]  rounded-full gap-[8px] pr-[10px] text-[14px] ">
+            <div className="bg-[#07a69826] p-[4px] rounded-full">
+              <BiSolidZap className="text-[#07A698]" />
+            </div>
+            Our Student
+          </button>
         </div>
-        <p className="font-Baloo text-[#1D5276] mt-[10px] text-[14px] text-center  leading-[28px] font-[600]">
-          শিক্ষা হলো ভবিষ্যতের চাবিকাঠি।
-        </p>
-        <p className="font-Baloo text-[#1D5276]  text-[14px] text-center  leading-[28px] font-[600]">
-          আমরা প্রতিটি শিক্ষার্থীকে সফলতার পথে এগিয়ে নিতে প্রতিশ্রুতিবদ্ধ।
+        <p className="font-Baloo text-[#1D5276] mt-[20px] text-[30px] text-center  leading-[28px] font-[600]">
+          Meet Our All Student
         </p>
       </div>
       <div className="flex items-center overflow-hidden mt-5 relative">
@@ -30,16 +30,6 @@ const AllStudents = () => {
         </Marquee>
         <div className="absolute top-0 bottom-0 left-0 w-52 bg-gradient-to-r from-[#f5f5f5] to-transparent pointer-events-none z-10"></div>
         <div className="absolute top-0 bottom-0 right-0 w-52 bg-gradient-to-l from-[#f5f5f5] to-transparent pointer-events-none z-10"></div>
-      </div>
-
-      <div className="flex justify-center mt-10">
-        <button
-          type="button"
-          className="font-Baloo text-white bg-secandary_color flex items-center justify-center py-[10px] px-5  gap-2 rounded-md"
-        >
-          সকল ছাত্রছাত্রী
-          {/* <img alt="icon" src={arrow} /> */}
-        </button>
       </div>
     </div>
   );

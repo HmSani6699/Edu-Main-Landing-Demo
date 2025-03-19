@@ -7,7 +7,7 @@ import about from "../../../../public/about1.jpg";
 const About = () => {
   return (
     <div className="mt-[150px] relative ">
-      <div className="absolute top-0 left-0">
+      <div className="absolute top-[30px] left-0">
         <img className="w-[400px]" src={about_shap} alt="" />
       </div>
       <div className="max-w-[900px] mx-auto flex ">

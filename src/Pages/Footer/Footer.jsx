@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="lg:w-[60%] md:w-[100%] w-full">
             <div className="flex justify-center lg:block ">
               {/* <img className="w-[170px]" src={logo} alt="" /> */}
-              <div className="relative z-20">
+              <div className="relative z-20 bg-white w-[100px] rounded-full border-2 border-[#07A698]">
                 <img className="w-[100px]" src={logo} alt="" />
               </div>
             </div>
