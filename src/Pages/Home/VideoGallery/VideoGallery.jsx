@@ -17,11 +17,11 @@ const VideoGallery = () => {
               <div className="bg-[#07a69826] p-[4px] rounded-full">
                 <BiSolidZap className="text-[#07A698]" />
               </div>
-              Our Video Gallery
+              ভিডিও গ্যালারি
             </button>
 
             <h2 className="text-[30px] font-bold my-[20px] text-white">
-              Explore Featured Class Curriculuam
+              আমাদের একাডেমির ভিডিও গ্যালারি ঘুরে দেখুন
             </h2>
           </div>
           <div className="flex items-center gap-[20px] relative z-40">

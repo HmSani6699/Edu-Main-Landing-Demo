@@ -34,30 +34,32 @@ const About = () => {
             <div className="bg-[#07a69826] p-[4px] rounded-full">
               <BiSolidZap className="text-[#07A698]" />
             </div>
-            About Academay
+            একাডেমি সম্পর্কে
           </button>
 
-          <h2 className="text-[25px] font-bold my-[20px]">
-            The Ultimate Online Platform for Interactive and
+          <h2 className="text-[25px] font-bold my-[15px]">
+            উদ্ভাবনী শিক্ষণ সমাধানের মাধ্যমে ভবিষ্যৎ গঠন
           </h2>
 
-          <div className="flex items-center gap-[10px] mb-[20px]">
+          <div className="flex items-center gap-[10px] mb-[15px]">
             <button className="bg-[#07A698] text-white rounded-full py-[4px] px-[10px] text-[14px]">
-              Our Mission
+              আমাদের লক্ষ্য
             </button>
             <button className="hover:bg-[#07A698] hover:text-white border text-black bg-white rounded-full py-[4px] px-[10px] text-[14px]">
-              Our Vision
+              আমাদের দৃষ্টিভঙ্গি
             </button>
             <button className="hover:bg-[#07A698] hover:text-white border text-black bg-white rounded-full py-[4px] px-[10px] text-[14px]">
-              Our Gool
+              আমাদের গোল
             </button>
           </div>
 
           <div>
             <p className="text-[13px] mb-[20px]">
-              Dictumst hendrerit velinunc justo. pulvinar massa diam vitae.
-              Montes, orci fringilla maecenas tellus in convallis sed id. Sed ut
-              commodo risus aenean. Quam consectetur ut vulputate ultrices diam.
+              আমাদের লক্ষ্য হলো উচ্চমানের, সহজলভ্য শিক্ষা প্রদান করা যা জ্ঞান
+              এবং বাস্তব-জগতের প্রয়োগের মধ্যে ব্যবধান পূরণ করে।
+              বিশেষজ্ঞ-নেতৃত্বাধীন কোর্স, উন্নত প্রযুক্তি এবং একটি সহায়ক
+              সম্প্রদায়ের মাধ্যমে, আমরা শিক্ষার্থীদের তাদের ক্যারিয়ার এবং তার
+              পরেও সাফল্যের জন্য ক্ষমতায়িত করি।
             </p>
             <div className="flex flex-col gap-[10px]">
               <div className="flex items-center gap-[10px]">
@@ -65,18 +67,18 @@ const About = () => {
                   01
                 </button>
                 <p className="text-[14px]">
-                  Quality Content and Expert Instruction
+                  মানসম্মত ক্লাস পাঠ্যক্রম এবং বিশেষজ্ঞ শিক্ষক
                 </p>
               </div>{" "}
               <div className="flex items-center gap-[10px]">
                 <button className="text-[#07A698] bg-white shadow-lg  h-[30px] w-[30px] rounded-full text-[14px]">
                   02
                 </button>
-                <p className="text-[14px]">Student Engagement and Retention</p>
+                <p className="text-[14px]">ছাত্রদের অংশগ্রহণ এবং ধরে রাখা</p>
               </div>
             </div>
             <button className="bg-[#07A698]  text-white rounded-full py-[4px] px-[10px] text-[14px] mt-[25px]">
-              More Details
+              আরও দেখুন
             </button>
           </div>
         </div>

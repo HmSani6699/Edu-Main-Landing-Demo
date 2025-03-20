@@ -27,20 +27,20 @@ const Banner = () => {
             </div>
           </div>
           <h2 className="text-[35px] whitespace-nowrap font-bold text-white mt-[10px]">
-            Pakunda Islamia Hafezia Madrasa
+            পাকুন্ডা ইসলামিয়া হাফেজিয়া মাদ্রাসা
           </h2>
 
           <p className="font-semibold text-[#07A698] text-[18px]">
-            Pakunda, Sonargon, Narayongonj
+            পাকুন্ডা, সোনারগাঁ, নারায়ণগঞ্জ
           </p>
           <div className="flex items-center justify-center gap-[20px] mt-[20px]">
             <div className="flex items-center gap-[10px]">
               <IoCheckmarkDoneCircle className="text-[#07A698]" />
-              <p>Get Certified</p>
+              <p>গ্রেট লাইফ</p>
             </div>
             <div className="flex items-center gap-[10px]">
               <IoCheckmarkDoneCircle className="text-[#07A698]" />
-              <p>Great Life</p>
+              <p>গ্রেট সার্টিফিকেট</p>
             </div>
           </div>
         </div>

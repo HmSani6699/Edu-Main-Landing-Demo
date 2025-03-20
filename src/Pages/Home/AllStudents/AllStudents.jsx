@@ -13,11 +13,11 @@ const AllStudents = () => {
             <div className="bg-[#07a69826] p-[4px] rounded-full">
               <BiSolidZap className="text-[#07A698]" />
             </div>
-            Our Student
+            আমাদের ছাত্র
           </button>
         </div>
         <p className="font-Baloo text-[#1D5276] mt-[20px] text-[30px] text-center  leading-[28px] font-[600]">
-          Meet Our All Student
+          আমাদের ছাত্র বৃন্দ
         </p>
       </div>
       <div className="flex items-center overflow-hidden mt-5 relative">

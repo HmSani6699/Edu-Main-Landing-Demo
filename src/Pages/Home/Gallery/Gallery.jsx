@@ -12,19 +12,19 @@ const Gallery = () => {
               <div className="bg-[#07a69826] p-[4px] rounded-full">
                 <BiSolidZap className="text-[#07A698]" />
               </div>
-              Our Image Gallery
+              ছবি গ্যালারি
             </button>
           </div>
 
           <h2 className="text-[30px] font-bold my-[20px] text-[#162726]">
-            Latest Image Gallery
+            আমাদের একাডেমির ছবি গ্যালারি ঘুরে দেখুন
           </h2>
         </div>
       </div>
 
       {/* ======>  Gallery <===== */}
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-[20px] ">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-[20px]  mt-[20px]">
         <GalleryCard />
         <GalleryCard />
         <GalleryCard />

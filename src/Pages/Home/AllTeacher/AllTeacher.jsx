@@ -11,11 +11,11 @@ const AllTeacher = () => {
             <div className="bg-[#07a69826] p-[4px] rounded-full">
               <BiSolidZap className="text-[#07A698]" />
             </div>
-            Our Teacher
+            আমাদের শিক্ষক
           </button>
         </div>
         <p className="font-Baloo text-[#1D5276] mt-[20px] text-[30px] text-center  leading-[28px] font-[600]">
-          Meet Our Expert Teacher
+          আমাদের বিশেষজ্ঞ শিক্ষক বৃন্দ
         </p>
       </div>
 

@@ -55,12 +55,12 @@ const ClassCurriculum = () => {
               <div className="bg-[#07a69826] p-[4px] rounded-full">
                 <BiSolidZap className="text-[#07A698]" />
               </div>
-              Class Curriculuam
+              ক্লাস পাঠ্যক্রম
             </button>
           </div>
 
           <h2 className="text-[30px] font-bold my-[20px] text-white text-center">
-            Explore Featured Class Curriculuam
+            ফিচার ক্লাস কারিকুলাম
           </h2>
         </div>
 
