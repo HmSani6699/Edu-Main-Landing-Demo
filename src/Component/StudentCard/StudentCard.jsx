@@ -20,7 +20,10 @@ const StudentCard = () => {
         <div className="flex items-center gap-2 mt-1">
           {/* <img width={14} height={14} alt="icon" src={course_icon} /> */}
           <p className="text-xs leading-[18px] font-[500] text-[#5D636F]">
-            Class <span className="text-[#07A698]">Five</span>
+            Class: <span className="text-[#07A698]">Five</span>
+          </p>
+          <p className="text-xs leading-[18px] font-[500] text-[#5D636F]">
+            Roll: <span className="text-[#07A698]">2</span>
           </p>
         </div>
       </div>
