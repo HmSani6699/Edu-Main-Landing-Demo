@@ -8,6 +8,7 @@ import {
   FaGraduationCap,
   FaChalkboardTeacher,
 } from "react-icons/fa";
+import Reveal from "../../../Component/Reveal/Reveal";
 
 const ClassCurriculum = () => {
   const curriculums = [
@@ -50,18 +51,21 @@ const ClassCurriculum = () => {
         </div>
         {/* ======> <====== */}
         <div>
-          <div className="flex items-center justify-center">
-            <button className="bg-white flex p-[5px]  rounded-full gap-[8px] pr-[10px] text-[14px] ">
-              <div className="bg-[#07a69826] p-[4px] rounded-full">
-                <BiSolidZap className="text-[#07A698]" />
-              </div>
-              ক্লাস পাঠ্যক্রম
-            </button>
-          </div>
-
-          <h2 className="text-[30px] font-bold my-[20px] text-white text-center">
-            ফিচার ক্লাস কারিকুলাম
-          </h2>
+          <Reveal>
+            <div className="flex items-center justify-center">
+              <button className="bg-white flex p-[5px]  rounded-full gap-[8px] pr-[10px] text-[14px] ">
+                <div className="bg-[#07a69826] p-[4px] rounded-full">
+                  <BiSolidZap className="text-[#07A698]" />
+                </div>
+                ক্লাস পাঠ্যক্রম
+              </button>
+            </div>
+          </Reveal>
+          <Reveal>
+            <h2 className="text-[30px] font-bold my-[20px] text-white text-center">
+              ফিচার ক্লাস কারিকুলাম
+            </h2>
+          </Reveal>
         </div>
 
         {/* ======>Curriculum card <======= */}

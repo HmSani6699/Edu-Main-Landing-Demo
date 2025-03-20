@@ -2,6 +2,8 @@ import React from "react";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { MdAccessAlarms, MdHeadsetMic, MdWhatsapp } from "react-icons/md";
 import logo from "../../../public/school.png";
+import NavLink from "../../Component/NavLink/NavLink";
+import { TbLogin2 } from "react-icons/tb";
 
 const Navber = () => {
   return (
@@ -31,34 +33,25 @@ const Navber = () => {
         </div>
       </div>
       {/* ======> Main navber <====== */}
+      <div className="bg-white max-w-[1200px] mx-auto py-[10px] flex items-center justify-between">
+        <div className="flex items-center justify-center">
+          <div className="w-[40px] bg-white rounded-full border-[#07A698] border-2">
+            <img src={logo} alt="" />
+          </div>
+        </div>
+        <div className="flex items-center gap-[30px]">
+          <NavLink title={"হোম"} />
+          <NavLink title={"আমাদের সম্পর্কে"} />
+          <NavLink title={"ভর্তি"} />
+          <NavLink title={"যোগাযোগ"} />
+          <NavLink title={"ব্লগ"} />
+        </div>
+        <button className="flex items-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px]">
+          Log In <TbLogin2 />
+        </button>
+      </div>
     </div>
   );
 };
 
 export default Navber;
-
-//  <div className="flex items-center justify-between  max-w-[1060px] mx-auto">
-//    {/* ====> Edu English Name <==== */}
-//    <div className="text-center">
-//      <h2 className="text-[37px] font-bold text-[#1d5276]">
-//        Pakunda Islamia Madrasa
-//      </h2>
-//      <p className="font-semibold text-[#1d5276]">
-//        Pakunda, Sonargon, Narayongonj
-//      </p>
-//    </div>
-//    {/* ====> Edu Logo <==== */}
-//    <div className="w-[135px]">
-//      <img src={logo} alt="" />
-//    </div>
-//    {/* ====> Edu Bangla
-//          Name <==== */}
-//    <div className="text-center">
-//      <h2 className="text-[30px] font-bold text-[#1d5276]">
-//        পাকুন্ডা ইসলামিয়া হাফেজিয়া মাদ্রাসা
-//      </h2>
-//      <p className="font-semibold text-[#1d5276]">
-//        পাকুন্ডা, সোনারগাঁ, নারায়ণগঞ্জ
-//      </p>
-//    </div>
-//  </div>;

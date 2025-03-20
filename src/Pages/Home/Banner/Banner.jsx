@@ -10,44 +10,61 @@ import logo from "../../../../public/school.png";
 import bannerLeft from "../../../../public/bannerLeft.png";
 import bannerRight from "../../../../public/bannerRight.png";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
+import Reveal from "../../../Component/Reveal/Reveal";
 
 const Banner = () => {
   return (
     <div className="rounded-bl-[20px] h-[560px]">
       <div className="bg-[#1e567bb5] h-full flex   text-white hero-section  pt-[50px] ">
         {/* =====>left  content <==== */}
-        <div>
-          <img src={bannerLeft} alt="" />
-        </div>
+
+        <Reveal>
+          <div>
+            <img src={bannerLeft} alt="" />
+          </div>
+        </Reveal>
         {/* =====>Middle content <==== */}
         <div className="text-center ">
-          <div className="flex items-center justify-center">
-            <div className="w-[135px] bg-white rounded-full border-[#07A698] border-2">
-              <img src={logo} alt="" />
+          <Reveal>
+            <div className="flex items-center justify-center">
+              <div className="w-[135px] bg-white rounded-full border-[#07A698] border-2">
+                <img src={logo} alt="" />
+              </div>
             </div>
-          </div>
-          <h2 className="text-[35px] whitespace-nowrap font-bold text-white mt-[10px]">
-            পাকুন্ডা ইসলামিয়া হাফেজিয়া মাদ্রাসা
-          </h2>
+          </Reveal>
+          <Reveal>
+            <h2 className="text-[35px] whitespace-nowrap font-bold text-white mt-[10px]">
+              পাকুন্ডা সরকারি প্রাথমিক বিদ্যালয়
+            </h2>
+          </Reveal>
+          <Reveal>
+            <p className="font-semibold text-[#07A698] text-[18px]">
+              পাকুন্ডা, সোনারগাঁ, নারায়ণগঞ্জ
+            </p>
+          </Reveal>
 
-          <p className="font-semibold text-[#07A698] text-[18px]">
-            পাকুন্ডা, সোনারগাঁ, নারায়ণগঞ্জ
-          </p>
           <div className="flex items-center justify-center gap-[20px] mt-[20px]">
-            <div className="flex items-center gap-[10px]">
-              <IoCheckmarkDoneCircle className="text-[#07A698]" />
-              <p>গ্রেট লাইফ</p>
-            </div>
-            <div className="flex items-center gap-[10px]">
-              <IoCheckmarkDoneCircle className="text-[#07A698]" />
-              <p>গ্রেট সার্টিফিকেট</p>
-            </div>
+            <Reveal>
+              <div className="flex items-center gap-[10px]">
+                <IoCheckmarkDoneCircle className="text-[#07A698]" />
+                <p>গ্রেট লাইফ</p>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div className="flex items-center gap-[10px]">
+                <IoCheckmarkDoneCircle className="text-[#07A698]" />
+                <p>গ্রেট সার্টিফিকেট</p>
+              </div>
+            </Reveal>
           </div>
         </div>
         {/* =====>right  content <==== */}
-        <div className="relative -z-50">
-          <img src={bannerRight} alt="" />
-        </div>
+        <Reveal>
+          {" "}
+          <div className="relative -z-50">
+            <img src={bannerRight} alt="" />
+          </div>
+        </Reveal>
       </div>
       <div>
         <div className=" flex items-center justify-center gap-[20px] relative z-50  -mt-[140px] rounded-[10px] p-[30px]">
