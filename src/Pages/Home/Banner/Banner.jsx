@@ -14,12 +14,12 @@ import Reveal from "../../../Component/Reveal/Reveal";
 
 const Banner = () => {
   return (
-    <div className="rounded-bl-[20px] h-[560px]">
-      <div className="bg-[#1e567bb5] h-full flex   text-white hero-section  pt-[50px] ">
+    <div className=" h-[560px] ">
+      <div className="bg-[#1e567bb5] h-full lg:flex   text-white hero-section  pt-[50px] ">
         {/* =====>left  content <==== */}
 
         <Reveal>
-          <div>
+          <div className="hidden lg:block">
             <img src={bannerLeft} alt="" />
           </div>
         </Reveal>
@@ -33,12 +33,12 @@ const Banner = () => {
             </div>
           </Reveal>
           <Reveal>
-            <h2 className="text-[35px] whitespace-nowrap font-bold text-white mt-[10px]">
+            <h2 className="lg:text-[35px] text-[28px] whitespace-nowrap font-bold text-white lg:mt-[10px] mt-[30px]">
               পাকুন্ডা সরকারি প্রাথমিক বিদ্যালয়
             </h2>
           </Reveal>
           <Reveal>
-            <p className="font-semibold text-[#07A698] text-[18px]">
+            <p className="font-semibold text-[#07A698] text-[18px] lg:mt-0 mt-[10px]">
               পাকুন্ডা, সোনারগাঁ, নারায়ণগঞ্জ
             </p>
           </Reveal>
@@ -60,14 +60,13 @@ const Banner = () => {
         </div>
         {/* =====>right  content <==== */}
         <Reveal>
-          {" "}
-          <div className="relative -z-50">
+          <div className="relative -z-50 hidden lg:block">
             <img src={bannerRight} alt="" />
           </div>
         </Reveal>
       </div>
       <div>
-        <div className=" flex items-center justify-center gap-[20px] relative z-50  -mt-[140px] rounded-[10px] p-[30px]">
+        <div className=" grid grid-cols-2 lg:grid-cols-4 gap-[20px] relative z-50  lg:-mt-[140px] -mt-[160px] rounded-[10px] p-[30px] lg:max-w-[790px] mx-auto">
           <Countdown
             img={student}
             number={"200"}
