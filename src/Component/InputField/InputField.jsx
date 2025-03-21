@@ -3,7 +3,7 @@ import React from "react";
 const InputField = ({ type, title, value, setValue, placeholder }) => {
   return (
     <div>
-      <p className="text-[16px] mb-[13px] ">{title}</p>
+      <p className="text-[16px] mb-[8px] ">{title}</p>
       <input
         type={type}
         value={value}

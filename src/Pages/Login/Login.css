@@ -1,22 +1,36 @@
-.login_box {
-  background: rgb(2, 6, 23);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 6, 23, 1) 5%,
-    rgba(0, 99, 116, 1) 36%,
-    rgba(2, 6, 23, 1) 100%
-  );
+.login_page {
+  position: relative;
+  background-color: #043334;
+  /* padding: 80px 20px; */
+  text-align: center;
+  /* color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%); */
 }
 
-.login_right_box {
-  background: rgb(0, 99, 116);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 99, 116, 1) 28%,
-    rgba(2, 6, 23, 1) 99%
-  );
-}
+/* Left person highlight */
+/* .login_page::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(54, 239, 122, 0.7), transparent);
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+} */
 
-.logo_text {
-  font-family: "Arial Black", Arial, sans-serif;
+/* Right person highlight */
+.login_page::after {
+  content: "";
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.7), transparent);
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
 }

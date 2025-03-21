@@ -6,6 +6,7 @@ import NavLink from "../../Component/NavLink/NavLink";
 import { TbLogin2 } from "react-icons/tb";
 import { RiCloseLargeLine, RiMenu3Fill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Navber = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -50,9 +51,11 @@ const Navber = () => {
           <NavLink title={"যোগাযোগ"} />
           <NavLink title={"ব্লগ"} />
         </div>
-        <button className="flex items-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px]">
-          Log In <TbLogin2 />
-        </button>
+        <Link to={"/login"}>
+          <button className="flex items-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px]">
+            Log In <TbLogin2 />
+          </button>
+        </Link>
       </div>
 
       {/* ======> Mobile nav  Main navber <====== */}
@@ -89,9 +92,11 @@ const Navber = () => {
             <NavLink title={"যোগাযোগ"} />
             <NavLink title={"ব্লগ"} />
           </div>
-          <button className="flex items-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px] mt-[20px]">
-            Log In <TbLogin2 />
-          </button>
+          <Link to={"/login"}>
+            <button className="flex items-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px] mt-[20px]">
+              Log In <TbLogin2 />
+            </button>
+          </Link>
         </div>
       )}
     </div>

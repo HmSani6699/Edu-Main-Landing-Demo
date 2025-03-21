@@ -69,7 +69,7 @@ const ClassCurriculum = () => {
         </div>
 
         {/* ======>Curriculum card <======= */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px] mt-[40px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px] mt-[10px] lg:mt-[40px]">
           {curriculums?.map((item) => (
             <CurriCulumCard
               icon={item?.icon}
