@@ -5,11 +5,10 @@ import Reveal from "../../../Component/Reveal/Reveal";
 
 const Gallery = () => {
   return (
-    <div className="max-w-[1100px] mx-auto    mt-[50px]  relative py-[60px]">
+    <div className="max-w-[1100px] mx-auto    lg:mt-[50px]  relative py-[60px] p-[10px]">
       <div className="flex items-center justify-center">
         <div>
           <Reveal>
-            {" "}
             <div className="flex items-center justify-center">
               <button className="bg-white flex p-[5px]  rounded-full gap-[8px] pr-[10px] text-[14px] ">
                 <div className="bg-[#07a69826] p-[4px] rounded-full">
@@ -20,7 +19,7 @@ const Gallery = () => {
             </div>
           </Reveal>
           <Reveal>
-            <h2 className="text-[30px] font-bold my-[20px] text-[#162726]">
+            <h2 className="text-[30px] font-bold my-[20px] text-[#162726] text-center lg:text-start">
               আমাদের একাডেমির ছবি গ্যালারি ঘুরে দেখুন
             </h2>
           </Reveal>

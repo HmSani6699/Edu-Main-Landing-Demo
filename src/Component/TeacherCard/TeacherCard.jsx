@@ -7,7 +7,7 @@ const TeacherCard = () => {
     <Reveal>
       {" "}
       <div className="border-[1px] rounded-[10px] shadow-md">
-        <div className="teacher_bg_image h-[300px]">
+        <div className="teacher_bg_image h-[300px]  overflow-hidden">
           <img
             className="h-full w-full"
             src={teacher_img}

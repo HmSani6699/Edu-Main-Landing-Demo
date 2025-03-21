@@ -5,7 +5,7 @@ import Reveal from "../../../Component/Reveal/Reveal";
 
 const AllTeacher = () => {
   return (
-    <div className="max-w-[900px] mx-auto mt-[50px]">
+    <div className="max-w-[900px] mx-auto lg:mt-[50px] p-[10px]">
       <div>
         <Reveal>
           <div className="flex items-center justify-center">

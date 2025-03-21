@@ -7,11 +7,11 @@ import Reveal from "../../../Component/Reveal/Reveal";
 
 const About = () => {
   return (
-    <div className="mt-[150px] relative ">
+    <div className="lg:mt-[150px] mt-[250px] relative p-[10px]">
       <div className="absolute top-[30px] left-0">
         <img className="w-[400px]" src={about_shap} alt="" />
       </div>
-      <div className="max-w-[900px] mx-auto flex ">
+      <div className="max-w-[900px] mx-auto lg:flex ">
         {/* =======> Left Content <====== */}
         <div className="lg:w-1/2">
           <img
@@ -30,7 +30,7 @@ const About = () => {
           </div>
         </div>
         {/* =======> Right Content <====== */}
-        <div className="lg:w-1/2 pl-[50px]">
+        <div className="lg:w-1/2 lg:pl-[50px] mt-[30px] lg:mt-0">
           <Reveal>
             {" "}
             <button className="bg-white flex p-[5px]  rounded-full gap-[8px] pr-[10px] text-[14px]">

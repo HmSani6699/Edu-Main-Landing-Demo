@@ -7,13 +7,13 @@ import Reveal from "../../../Component/Reveal/Reveal";
 const VideoGallery = () => {
   return (
     <Reveal>
-      <div className=" bg-[#07A698] mt-[100px]  relative py-[60px] ">
+      <div className=" bg-[#07A698] mt-[100px]  relative py-[60px] p-[10px]">
         <div className="absolute top-0 right-0">
           <img className="w-[500px]" src={shap_image} alt="shape" />
         </div>
 
         <div className="max-w-[1100px] mx-auto">
-          <div className="flex items-center justify-between">
+          <div className="lg:flex items-center justify-between">
             <div>
               <button className="bg-white flex p-[5px]  rounded-full gap-[8px] pr-[10px] text-[14px] ">
                 <div className="bg-[#07a69826] p-[4px] rounded-full">
@@ -26,7 +26,7 @@ const VideoGallery = () => {
                 আমাদের একাডেমির ভিডিও গ্যালারি ঘুরে দেখুন
               </h2>
             </div>
-            <div className="flex items-center gap-[20px] relative z-40">
+            <div className="lg:flex items-center gap-[20px] relative z-40 hidden ">
               <button className=" cursor-pointer  bg-white p-[10px] rounded-full text-[#07A698]">
                 <FaArrowLeft />
               </button>

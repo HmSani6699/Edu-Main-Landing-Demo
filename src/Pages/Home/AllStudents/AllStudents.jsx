@@ -8,7 +8,7 @@ import Reveal from "../../../Component/Reveal/Reveal";
 const AllStudents = () => {
   return (
     <Reveal>
-      <div className=" max-w-[1471px] mx-auto mt-[100px] ">
+      <div className=" max-w-[1471px] mx-auto mt-[60px] lg:mt-[100px] ">
         <div>
           <Reveal>
             <div className="flex items-center justify-center">

@@ -11,12 +11,12 @@ const Home = () => {
   return (
     <div className="lg:max-w-[1280px] mx-auto   relative ">
       <Banner />
-      {/* <About />
+      <About />
       <ClassCurriculum />
       <AllStudents />
       <AllTeacher />
       <VideoGallery />
-      <Gallery /> */}
+      <Gallery />
     </div>
   );
 };
