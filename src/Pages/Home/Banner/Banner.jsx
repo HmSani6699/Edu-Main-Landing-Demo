@@ -33,7 +33,7 @@ const Banner = () => {
             </div>
           </Reveal>
           <Reveal>
-            <h2 className="lg:text-[35px] text-[28px] whitespace-nowrap font-bold text-white lg:mt-[10px] mt-[30px]">
+            <h2 className="lg:text-[35px] text-[25px] whitespace-nowrap font-bold text-white lg:mt-[10px] mt-[30px]">
               পাকুন্ডা সরকারি প্রাথমিক বিদ্যালয়
             </h2>
           </Reveal>

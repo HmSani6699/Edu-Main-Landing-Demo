@@ -6,7 +6,7 @@ import Reveal from "../Reveal/Reveal";
 const Countdown = ({ img, number, title, main_title }) => {
   return (
     <Reveal>
-      <div className=" bg-white p-[20px] rounded-[15px] w-[160px] py-[20px] shadow-sm">
+      <div className=" bg-white p-[20px] rounded-[15px] lg:w-[160px] py-[20px] shadow-sm">
         <div className="flex items-center justify-center">
           <img className="w-[50px]" src={img} alt="student" />
         </div>
