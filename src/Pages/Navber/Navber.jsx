@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { MdAccessAlarms, MdHeadsetMic, MdWhatsapp } from "react-icons/md";
 import logo from "../../../public/school.png";
 import NavLink from "../../Component/NavLink/NavLink";
 import { TbLogin2 } from "react-icons/tb";
-import { RiMenu3Fill } from "react-icons/ri";
+import { RiCloseLargeLine, RiMenu3Fill } from "react-icons/ri";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Navber = () => {
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+
   return (
-    <div>
+    <div className="relative">
       {/* ======> Sopurt navber <====== */}
       <div className="hidden lg:block bg-[#043334] text-white py-[10px] font-semibold border-b border-gray-500">
         <div className="max-w-[1200px] mx-auto flex items-center justify-between">
@@ -62,10 +65,35 @@ const Navber = () => {
             পাকুন্ডা সরকারি প্রাথমিক বি:
           </h2>
         </div>
-        <button>
-          <RiMenu3Fill className="font-bold text-[20px]" />
+        <button onClick={() => setIsOpenMenu(!isOpenMenu)}>
+          {isOpenMenu ? (
+            <RiCloseLargeLine />
+          ) : (
+            <RiMenu3Fill className="font-bold text-[20px]" />
+          )}
         </button>
       </div>
+
+      {/* ========> Click three doete menu <======= */}
+
+      {isOpenMenu && (
+        <div
+          className={`absolute top-[50px] left-0 bg-white w-full z-40 p-[20px] 
+                  transition-all duration-500 ease-in-out 
+                 `}
+        >
+          <div className="flex flex-col gap-[10px]">
+            <NavLink title={"হোম"} />
+            <NavLink title={"আমাদের সম্পর্কে"} />
+            <NavLink title={"ভর্তি"} />
+            <NavLink title={"যোগাযোগ"} />
+            <NavLink title={"ব্লগ"} />
+          </div>
+          <button className="flex items-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px] mt-[20px]">
+            Log In <TbLogin2 />
+          </button>
+        </div>
+      )}
     </div>
   );
 };
