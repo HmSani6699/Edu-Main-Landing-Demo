@@ -14,9 +14,9 @@ const Main = () => {
         <Navber />
       </div>
       <Outlet />
-      {/* <div className={`${pathname === "/login" ? "hidden" : "block"}`}>
+      <div className={`${pathname === "/login" ? "hidden" : "block"}`}>
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 };

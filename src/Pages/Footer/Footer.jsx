@@ -11,8 +11,7 @@ import Reveal from "../../Component/Reveal/Reveal";
 const Footer = () => {
   return (
     <Reveal>
-      {" "}
-      <div className="footer_container text-white w-full mt-[50px] relative p-[15px] bg-[#1e567b]">
+      <div className="footer_container text-white w-full lg:mt-[50px] relative p-[15px] bg-[#1e567b]">
         <div className="footer_box h-full w-full  top-0 left-0 opacity-[0.30] absolute"></div>
         <div className="max-w-[1280px] mx-auto relative z-10 py-[50px] lg:px-0 px-[15px] lg:flex">
           <div className="lg:w-[60%] md:w-[100%] w-full lg:flex md:flex ">
