@@ -66,7 +66,7 @@ const Banner = () => {
         </Reveal>
       </div>
       <div>
-        <div className=" grid grid-cols-2 lg:grid-cols-4 gap-[20px] relative z-50  lg:-mt-[140px] -mt-[160px] rounded-[10px] p-[30px] lg:max-w-[790px] mx-auto">
+        <div className=" grid grid-cols-2 lg:grid-cols-4 lg:gap-[20px] gap-[10px] relative z-50  lg:-mt-[140px] -mt-[160px] rounded-[10px] lg:p-[30px] p-[10px] lg:max-w-[790px] mx-auto">
           <Countdown
             img={student}
             number={"200"}

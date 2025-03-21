@@ -7,7 +7,7 @@ import Reveal from "../../../Component/Reveal/Reveal";
 const VideoGallery = () => {
   return (
     <Reveal>
-      <div className=" bg-[#07A698] mt-[100px]  relative py-[60px] p-[10px]">
+      <div className=" bg-[#07A698] lg:mt-[100px] mt-[50px]  relative py-[60px] p-[10px]">
         <div className="absolute top-0 right-0">
           <img className="w-[500px]" src={shap_image} alt="shape" />
         </div>

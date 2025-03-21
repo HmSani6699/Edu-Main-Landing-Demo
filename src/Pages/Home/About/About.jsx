@@ -7,7 +7,7 @@ import Reveal from "../../../Component/Reveal/Reveal";
 
 const About = () => {
   return (
-    <div className="lg:mt-[150px] mt-[250px] relative p-[10px]">
+    <div className="lg:mt-[150px] mt-[220px] relative p-[10px]">
       <div className="absolute top-[30px] left-0">
         <img className="w-[400px]" src={about_shap} alt="" />
       </div>
