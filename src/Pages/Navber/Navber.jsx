@@ -45,11 +45,11 @@ const Navber = () => {
           </div>
         </div>
         <div className="flex items-center gap-[30px]">
-          <NavLink title={"হোম"} />
-          <NavLink title={"আমাদের সম্পর্কে"} />
-          <NavLink title={"ভর্তি"} />
-          <NavLink title={"যোগাযোগ"} />
-          <NavLink title={"ব্লগ"} />
+          <NavLink url={"/"} title={"হোম"} />
+          <NavLink url={"/aboutUs"} title={"আমাদের সম্পর্কে"} />
+          <NavLink url={"/admission"} title={"ভর্তি"} />
+          <NavLink url={"/contact"} title={"যোগাযোগ"} />
+          {/* <NavLink title={"ব্লগ"} /> */}
         </div>
         <Link to={"/login"}>
           <button className="flex items-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px]">
@@ -86,11 +86,11 @@ const Navber = () => {
                  `}
         >
           <div className="flex flex-col gap-[10px]">
-            <NavLink title={"হোম"} />
-            <NavLink title={"আমাদের সম্পর্কে"} />
-            <NavLink title={"ভর্তি"} />
-            <NavLink title={"যোগাযোগ"} />
-            <NavLink title={"ব্লগ"} />
+            <NavLink url={"/"} title={"হোম"} />
+            <NavLink url={"/aboutUs"} title={"আমাদের সম্পর্কে"} />
+            <NavLink url={"/admission"} title={"ভর্তি"} />
+            <NavLink url={"/contact"} title={"যোগাযোগ"} />
+            {/* <NavLink title={"ব্লগ"} /> */}
           </div>
           <Link to={"/login"}>
             <button className="flex items-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px] mt-[20px]">

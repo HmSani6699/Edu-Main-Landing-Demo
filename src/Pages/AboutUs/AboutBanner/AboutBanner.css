@@ -1,0 +1,11 @@
+.about_banner_container {
+  background: linear-gradient(
+      90deg,
+      rgba(4, 51, 52, 1) 0%,
+      rgba(7, 166, 152, 0.5655054258031338) 90%
+    ),
+    url("/about1.jpg"); /* Ensure the correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
