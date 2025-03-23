@@ -10,23 +10,23 @@ import Reveal from "../../Component/Reveal/Reveal";
 
 const AboutUs = () => {
   return (
-    <div className="">
+    <div>
       {/* =====> Menu Derication <==== */}
-      <div className="flex items-center gap-[10px] py-[40px] max-w-[1200px] mx-auto">
+      {/* <div className="flex items-center gap-[10px] py-[40px] max-w-[1200px] mx-auto">
         <IoHomeOutline className="text-[#1d5276]" />
         <p className="text-[#1d5276]">হোম</p>
         <IoIosArrowForward className="text-[#1d5276]" />
         <p className="text-gray-500">আমাদের সম্পর্কে</p>
-      </div>
+      </div> */}
 
       {/* ======> About Banner <===== */}
       <AboutBanner />
 
       {/* ====> Funder <===== */}
-      <div className="p-4 w-full md:w-[754px] lg:w-[813px] mx-auto bg-[#F5F5F5] rounded-[12px] border-2 border-[#53DFC3] lg:mt-[50px]">
+      <div className=" w-full md:w-[754px] lg:w-[813px] mx-auto   mt-[50px]  px-[10px]">
         <Reveal>
           {" "}
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10 border-2 p-4 border-[#53DFC3] bg-[#F5F5F5] rounded-[12px]">
             {" "}
             <div className="w-full ">
               <Reveal>
@@ -93,7 +93,7 @@ const AboutUs = () => {
 
       {/* =====> Instructor <====== */}
       <div className="w-full lg:max-w-[1096px] mx-auto py-10  bg-[#F5F5F5] rounded-[10px] px-5 relative lg:mt-[40px]">
-        <div className="mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 ">
+        <div className="mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 ">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]?.map(() => (
             <Reveal>
               {" "}
@@ -128,7 +128,7 @@ const AboutUs = () => {
 
       {/*  */}
       <Reveal>
-        <div className="bg-[#043334] w-full bg-center mt-[50px]">
+        <div className="bg-[#043334] w-full bg-center mt-[50px] px-[10px]">
           <div className="py-10 md:py-24 ">
             <div className="w-full lg:max-w-[818px] p-2 md:p-4 lg:p-10 bg-[#F1F2F3] rounded-[20px] mx-auto">
               <div className="flex flex-col md:flex-row gap-3 md:gap-5 relative">
@@ -170,14 +170,14 @@ const AboutUs = () => {
       {/*  */}
       <Reveal>
         {" "}
-        <div className="bg-white py-20">
+        <div className="bg-white py-20 px-[10px]">
           <div className="flex flex-col items-center gap-6 ">
             <div>
               <h1 className="text-black text-[20px] md:text-[36px] lg:text-[40px] font-[600] lg:font-[700] leading-[28px] md:leading-[48px] text-center">
                 অফিস এবং প্রশিক্ষণের স্থান
               </h1>
             </div>
-            <div className="w-[600px] h-[350px]">
+            <div className="lg:w-[600px] h-[350px]">
               <img
                 className="w-full h-full rounded-[20px]"
                 src={about}

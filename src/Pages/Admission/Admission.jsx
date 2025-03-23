@@ -198,12 +198,12 @@ const Admission = () => {
             </div>
 
             {reviewUserChange === "1" && (
-              <div className="bg-[#D4E9E7] rounded-[8px] w-full px-[20px] py-[30px] flex items-center justify-between  h-fit relative z-20">
+              <div className="bg-[#D4E9E7] rounded-[8px] w-full px-[20px] py-[30px] lg:flex items-center justify-between  h-fit relative z-20">
                 <div className="lg:w-1/2 w-full">
                   <h2 className="font-Baloo font-bold text-[#464A53] text-[20px] text-center mb-[10px]">
                     অনাবাসিক
                   </h2>
-                  <div className="border border-gray-500 rounded-[12px] mr-[20px]">
+                  <div className="border border-gray-500 rounded-[12px] lg:mr-[20px]">
                     <div className="flex items-center justify-between bg-[#043334] text-white px-[30px] py-[6px] rounded-t-[10px]">
                       <h2>মেনু</h2>
                       <h2>টাকা</h2>
@@ -225,11 +225,11 @@ const Admission = () => {
                     </div>
                   </div>
                 </div>
-                <div className="lg:w-1/2 w-full border-l-[3px] border-[#07A698]">
+                <div className="lg:w-1/2 w-full lg:border-l-[3px] lg:border-[#07A698] mt-[20px] lg:mt-0">
                   <h2 className="font-Baloo font-bold text-[#464A53] text-[20px] text-center mb-[10px]">
                     আবাসিক
                   </h2>
-                  <div className="border border-gray-500 rounded-[12px] ml-[20px]">
+                  <div className="border border-gray-500 rounded-[12px] lg:ml-[20px]">
                     <div className="flex items-center justify-between bg-[#043334] text-white px-[30px] py-[6px] rounded-t-[10px]">
                       <h2>মেনু</h2>
                       <h2>টাকা</h2>

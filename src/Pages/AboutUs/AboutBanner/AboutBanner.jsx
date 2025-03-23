@@ -9,13 +9,13 @@ const AboutBanner = () => {
     <Reveal>
       {" "}
       <div className="about_banner_container  w-full py-[60px]">
-        <div className="max-w-[1200px] mx-auto lg:flex items-center justify-center gap-[30px] ">
+        <div className="max-w-[1200px] mx-auto lg:flex items-center justify-center gap-[30px] px-[10px]">
           <div className="lg:w-1/2">
             <Reveal>
-              <h2 className="text-[35px] text-white font-bold">
+              <h2 className="text-[35px] text-center lg:text-start text-white font-bold">
                 শিখুন, নয়তো শেখান
               </h2>
-              <p className="text-white mt-[10px] text-[18px]">
+              <p className="text-white mt-[10px] text-[18px] text-center lg:text-start">
                 পাকুন্ডা সরকারি প্রাথমিক বিদ্যালয়, ২০০০ সালে প্রতিষ্ঠিত
                 বাংলাদেশের সর্বাধুনিক শিক্ষা প্রযুক্তি প্রতিষ্ঠান। দেশজুড়ে সবার
                 জন্য মানসম্মত পড়াশোনা নিশ্চিত করতে অভিজ্ঞ শিক্ষক শিক্ষিকা এবং
@@ -24,7 +24,7 @@ const AboutBanner = () => {
               </p>
             </Reveal>
           </div>
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 lg:mt-0 mt-[20px]">
             <Reveal>
               <div className="h-full w-full border-[5px] rounded-[20px] relative">
                 <img
