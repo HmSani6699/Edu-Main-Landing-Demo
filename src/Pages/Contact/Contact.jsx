@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div>
       {/* =====> Menu Derication <==== */}
-      <div className="flex items-center gap-[10px] py-[40px] max-w-[1200px] mx-auto">
+      <div className="flex items-center gap-[10px] py-[40px] max-w-[1200px] mx-auto px-[10px]">
         <IoHomeOutline className="text-[#1d5276]" />
         <p className="text-[#1d5276]">হোম</p>
         <IoIosArrowForward className="text-[#1d5276]" />

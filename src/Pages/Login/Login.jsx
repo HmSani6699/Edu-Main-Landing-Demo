@@ -10,8 +10,8 @@ const Login = () => {
   const [isTypeText, setIsTypeText] = useState(false);
 
   return (
-    <div className="flex items-center justify-center h-screen w-full ">
-      <div className="lg:flex items-center  lg:w-[700px] w-full h-full  lg:h-[500px] lg:border-[#07A698] lg:border-2 lg:rounded-[20px]">
+    <div className="flex items-center justify-center lg:h-screen w-full ">
+      <div className="lg:flex items-center  lg:w-[700px] w-full h-full  lg:h-[500px] lg:border-[#07A698] lg:border-2 lg:rounded-[20px] p-[20px] lg:p-0 my-[40px] lg:my-0">
         {/* ======> Left Content <==== */}
         <div className="login_page w-1/2 h-full rounded-r-[90px] rounded-l-[18px]  p-[20px] hidden lg:block">
           <div>
@@ -33,7 +33,7 @@ const Login = () => {
         </div>
 
         {/* ======> Right Content <==== */}
-        <div className="lg:w-1/2 w-full h-full  p-[20px] lg:pt-[20px]  pt-[100px]">
+        <div className="lg:w-1/2 w-full h-full  p-[20px] lg:pt-[20px]  py-[40px] bg-white  border-[#07A698] border-t-[3px]  lg:border-none rounded-[20px] lg:rounded-none">
           <div className="flex items-center justify-center p-[20px]">
             <div className="w-[70px] bg-white rounded-full border-[#07A698] border-2">
               <img src={logo} alt="" />
@@ -45,14 +45,14 @@ const Login = () => {
           <div className="flex flex-col gap-[20px]">
             <InputField
               type="text"
-              title="Phone"
-              placeholder="Enter Your Phone"
+              title="ফোন নম্বর"
+              placeholder="আপনার ফোন নম্বর লিখুন"
             />
             <div className="relative ">
               <InputField
                 type={isTypeText ? "text" : "password"}
-                title="Password"
-                placeholder="Enter Your Password"
+                title="পাসওয়ার্ড"
+                placeholder="আপনার পাসওয়ার্ড নম্বর লিখুন"
               />
               <div className=" absolute top-[42px] right-[15px] z-10">
                 {isTypeText ? (

@@ -10,13 +10,20 @@ const Main = () => {
 
   return (
     <div>
-      <div className={`${pathname === "/login" ? "hidden" : "block"}`}>
+      <div>
+        <Navber />
+      </div>
+      <Outlet />
+      <div>
+        <Footer />
+      </div>
+      {/* <div className={`${pathname === "/login" ? "hidden" : "block"}`}>
         <Navber />
       </div>
       <Outlet />
       <div className={`${pathname === "/login" ? "hidden" : "block"}`}>
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 };
