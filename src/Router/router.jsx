@@ -5,6 +5,7 @@ import Login from "../Pages/Login/Login";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import Contact from "../Pages/Contact/Contact";
 import Admission from "../Pages/Admission/Admission";
+import ForgotPassword from "../Pages/Login/ForgotPassword";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login />,
+      },
+      {
+        path: "forgotPassword",
+        element: <ForgotPassword />,
       },
       {
         path: "aboutUs",

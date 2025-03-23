@@ -61,9 +61,9 @@ const Navber = () => {
       </div>
 
       {/* ======> Mobile nav  Main navber <====== */}
-      <div className="lg:hidden flex items-center justify-between  bg-white max-w-[1200px] mx-auto py-[10px] px-[10px] ">
+      <div className="lg:hidden flex items-center justify-between  bg-white max-w-[1200px] mx-auto py-[15px] px-[10px] ">
         <div className="flex items-center gap-[6px] ">
-          <div className="w-[30px] bg-white rounded-full border-[#07A698] border-2">
+          <div className="w-[40px] bg-white rounded-full border-[#07A698] border-2">
             <img src={logo} alt="" />
           </div>
           <h2 className="lg:text-[35px] text-[20px] whitespace-nowrap font-bold text-[#1d5276] ">
