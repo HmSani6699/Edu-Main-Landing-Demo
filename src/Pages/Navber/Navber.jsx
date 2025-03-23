@@ -38,24 +38,26 @@ const Navber = () => {
         </div>
       </div>
       {/* ======> Main navber <====== */}
-      <div className="hidden bg-white max-w-[1200px] mx-auto py-[10px] lg:flex items-center justify-between">
-        <div className="flex items-center justify-center">
-          <div className="w-[40px] bg-white rounded-full border-[#07A698] border-2">
-            <img src={logo} alt="" />
+      <div className="bg-white ">
+        <div className="hidden max-w-[1200px] mx-auto py-[10px] lg:flex items-center justify-between">
+          <div className="flex items-center justify-center">
+            <div className="w-[40px] bg-white rounded-full border-[#07A698] border-2">
+              <img src={logo} alt="" />
+            </div>
           </div>
+          <div className="flex items-center gap-[30px]">
+            <NavLink url={"/"} title={"হোম"} />
+            <NavLink url={"/aboutUs"} title={"আমাদের সম্পর্কে"} />
+            <NavLink url={"/admission"} title={"ভর্তি"} />
+            <NavLink url={"/contact"} title={"যোগাযোগ"} />
+            {/* <NavLink title={"ব্লগ"} /> */}
+          </div>
+          <Link to={"/login"}>
+            <button className="flex items-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px]">
+              Log In <TbLogin2 />
+            </button>
+          </Link>
         </div>
-        <div className="flex items-center gap-[30px]">
-          <NavLink url={"/"} title={"হোম"} />
-          <NavLink url={"/aboutUs"} title={"আমাদের সম্পর্কে"} />
-          <NavLink url={"/admission"} title={"ভর্তি"} />
-          <NavLink url={"/contact"} title={"যোগাযোগ"} />
-          {/* <NavLink title={"ব্লগ"} /> */}
-        </div>
-        <Link to={"/login"}>
-          <button className="flex items-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px]">
-            Log In <TbLogin2 />
-          </button>
-        </Link>
       </div>
 
       {/* ======> Mobile nav  Main navber <====== */}

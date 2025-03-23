@@ -31,7 +31,7 @@ const Contact = () => {
       </div>
 
       {/* map and details */}
-      <div className="max-w-[1100px] mx-auto mt-[30px]">
+      <div className="max-w-[1100px] mx-auto mt-[30px] px-[10px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 py-[30px] gap-5 lg:gap-14 px-0 md:px-20 lg:px-0">
           <div className="overflow-hidden bg-white rounded-[20px] ">
             <div className="p-1">
