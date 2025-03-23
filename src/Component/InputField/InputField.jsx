@@ -9,7 +9,7 @@ const InputField = ({ type, title, value, setValue, placeholder }) => {
         value={value}
         setValue={setValue}
         placeholder={placeholder}
-        className="w-full border-none outline-none py-[6px] px-[25px] rounded-[8px] text-black"
+        className="w-full border-none outline-none py-[6px] px-[25px] rounded-[8px] text-black bg-gray-100"
       />
     </div>
   );
