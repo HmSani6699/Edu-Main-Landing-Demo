@@ -156,7 +156,7 @@ const Navber = () => {
 
             <div className="flex flex-col gap-[15px] mt-[20px]">
               <MobileNavlink
-                url={"/"}
+                url={"/student-dashboard/1"}
                 icon={<img className="w-[30px]" src={user} alt="" />}
                 title={"Md: Sadiq"}
                 setIsOpenMenu={setIsOpenMenu}
