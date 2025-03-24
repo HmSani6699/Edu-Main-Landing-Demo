@@ -1,15 +1,23 @@
 import React, { useState } from "react";
-import { FaFacebookF, FaYoutube } from "react-icons/fa";
-import { MdAccessAlarms, MdHeadsetMic, MdWhatsapp } from "react-icons/md";
+import { FaFacebookF, FaHome, FaUserFriends, FaYoutube } from "react-icons/fa";
+import {
+  MdAccessAlarms,
+  MdContactMail,
+  MdHeadsetMic,
+  MdWhatsapp,
+} from "react-icons/md";
 import logo from "../../../public/school.png";
 import NavLink from "../../Component/NavLink/NavLink";
 import { TbLogin2 } from "react-icons/tb";
 import { RiCloseLargeLine, RiMenu3Fill } from "react-icons/ri";
-import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import user from "../../../public/teacher1.png";
+import { IoMdSchool } from "react-icons/io";
+import MobileNavlink from "../../Component/NavLink/MobileNavlink";
 
 const Navber = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [isOpenLargeMenu, setIsOpenLargeMenu] = useState(false);
 
   return (
     <div className="relative">
@@ -40,7 +48,7 @@ const Navber = () => {
       {/* ======> Main navber <====== */}
       <div className="bg-white ">
         <div className="hidden max-w-[1200px] mx-auto py-[10px] lg:flex items-center justify-between">
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center ">
             <div className="w-[40px] bg-white rounded-full border-[#07A698] border-2">
               <img src={logo} alt="" />
             </div>
@@ -52,11 +60,59 @@ const Navber = () => {
             <NavLink url={"/contact"} title={"যোগাযোগ"} />
             {/* <NavLink title={"ব্লগ"} /> */}
           </div>
-          <Link to={"/login"}>
+          {/* <Link to={"/login"}>
             <button className="flex items-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px]">
               Log In <TbLogin2 />
             </button>
-          </Link>
+          </Link> */}
+          <div className="relative">
+            <div
+              onClick={() => setIsOpenLargeMenu(!isOpenLargeMenu)}
+              className="flex items-center justify-center cursor-pointer"
+            >
+              <div className="w-[40px] h-[40px] bg-white rounded-full border-[#07A698] border-2 overflow-hidden">
+                <img className="w-[40px]" src={user} alt="" />
+              </div>
+            </div>
+            {isOpenLargeMenu && (
+              <div className="absolute top-[50px] right-0 bg-white z-40 border rounded-[8px] shadow-md  p-[20px]">
+                <div className="flex items-center justify-center">
+                  <div className="w-[50px] h-[50px] bg-white rounded-full border-[#07A698] border-2 overflow-hidden">
+                    <img className="w-[50px]" src={user} alt="" />
+                  </div>
+                </div>
+                <h2 className="text-[20px] whitespace-nowrap font-bold text-[#1d5276] text-center ">
+                  MD: Sadiqur Rahman
+                </h2>
+                <div className="border-[#07A698] border my-[5px]"></div>
+
+                <div className="flex flex-col gap-[15px] mt-[20px]">
+                  <div className="flex items-center gap-[10px] ">
+                    <div className="w-[30px] h-[30px] bg-white rounded-full border-[#07A698] border-2 overflow-hidden">
+                      <img className="w-[30px]" src={user} alt="" />
+                    </div>
+                    <h2 className="text-[16px] whitespace-nowrap  text-[#1d5276] ">
+                      MD: Sadiq
+                    </h2>
+                  </div>
+                  <div className="flex items-center gap-[10px]">
+                    <div className="w-[30px] h-[30px] bg-white rounded-full border-[#07A698] border-2 overflow-hidden">
+                      <img className="w-[30px]" src={user} alt="" />
+                    </div>
+                    <h2 className="text-[16px] whitespace-nowrap  text-[#1d5276] ">
+                      MD: Sadiq
+                    </h2>
+                  </div>
+
+                  <Link to={"/login"}>
+                    <button className="flex items-center justify-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px] w-full">
+                      Log In <TbLogin2 />
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
@@ -83,19 +139,70 @@ const Navber = () => {
 
       {isOpenMenu && (
         <div
-          className={`absolute top-[50px] left-0 bg-white w-full z-40 p-[20px] 
+          className={`absolute top-[60px] left-0 bg-white w-full z-[100] p-[20px]  
                   transition-all duration-500 ease-in-out 
                  `}
         >
+          <div className="mb-[15px]">
+            <div className="flex items-center justify-center">
+              <div className="w-[50px] h-[50px] bg-white rounded-full border-[#07A698] border-2 overflow-hidden">
+                <img className="w-[50px]" src={user} alt="" />
+              </div>
+            </div>
+            <h2 className="text-[20px] whitespace-nowrap font-bold text-[#1d5276] text-center ">
+              MD: Sadiqur Rahman
+            </h2>
+            <div className="border-[#07A698] border my-[10px]"></div>
+
+            <div className="flex flex-col gap-[15px] mt-[20px]">
+              <MobileNavlink
+                url={"/"}
+                icon={<img className="w-[30px]" src={user} alt="" />}
+                title={"Md: Sadiq"}
+                setIsOpenMenu={setIsOpenMenu}
+              />
+
+              {/* <Link to={"/login"}>
+                <button className="flex items-center justify-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px] w-full">
+                  Log In <TbLogin2 />
+                </button>
+              </Link> */}
+            </div>
+          </div>
+
           <div className="flex flex-col gap-[10px]">
-            <NavLink url={"/"} title={"হোম"} />
-            <NavLink url={"/aboutUs"} title={"আমাদের সম্পর্কে"} />
-            <NavLink url={"/admission"} title={"ভর্তি"} />
-            <NavLink url={"/contact"} title={"যোগাযোগ"} />
+            <MobileNavlink
+              url={"/"}
+              icon={<FaHome />}
+              title={"হোম"}
+              setIsOpenMenu={setIsOpenMenu}
+            />
+            <MobileNavlink
+              url={"/aboutUs"}
+              title={"আমাদের সম্পর্কে"}
+              icon={<FaUserFriends />}
+              setIsOpenMenu={setIsOpenMenu}
+            />
+            <MobileNavlink
+              url={"/admission"}
+              title={"ভর্তি"}
+              icon={<IoMdSchool />}
+              setIsOpenMenu={setIsOpenMenu}
+            />
+            <MobileNavlink
+              url={"/contact"}
+              title={"যোগাযোগ"}
+              icon={<MdContactMail />}
+              setIsOpenMenu={setIsOpenMenu}
+            />
+
             {/* <NavLink title={"ব্লগ"} /> */}
           </div>
           <Link to={"/login"}>
-            <button className="flex items-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px] mt-[20px]">
+            <button
+              onClick={() => setIsOpenMenu(false)}
+              className="flex items-center justify-center gap-[6px] text-white bg-[#07A698] py-[4px] px-[15px] rounded-[6px] mt-[20px] w-full"
+            >
               Log In <TbLogin2 />
             </button>
           </Link>
