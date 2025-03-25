@@ -6,7 +6,9 @@ const MenuCategoryNavLink = ({ url, icon, title }) => {
     <Link to={url}>
       <div className="flex flex-col items-center justify-center">
         {icon}
-        <h2 className="mt-[5px] font-semibold whitespace-nowrap">{title}</h2>
+        <h2 className="text-[#043334] mt-[5px] font-semibold whitespace-nowrap">
+          {title}
+        </h2>
       </div>
     </Link>
   );

@@ -6,7 +6,7 @@ const ClassPeriodCard = ({ subject, time, img, name, period }) => {
     <Reveal>
       {" "}
       <div className="border-[#07A698] border rounded-[20px] p-[10px]">
-        <h2 className="text-[23px]">{subject}</h2>
+        <h2 className="text-[23px] text-[#043334]">{subject}</h2>
         <p className="text-gray-400">{time}</p>
         <div className="border border-gray-300 my-[10px]"></div>
         <div className="flex items-center justify-between">
