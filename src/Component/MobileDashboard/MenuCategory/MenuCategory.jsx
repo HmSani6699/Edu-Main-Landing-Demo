@@ -12,7 +12,7 @@ import MenuCategoryNavLink from "../../NavLink/MenuCategoryNavLink";
 
 const MenuCategory = () => {
   return (
-    <div className="my-[30px] grid grid-cols-3 px-[30px] gap-[20px] ">
+    <div className="my-[30px] grid grid-cols-3 px-[10px] gap-[20px] ">
       <MenuCategoryNavLink
         url={"/"}
         icon={<RiPencilRuler2Line className="text-[30px]" />}
