@@ -15,33 +15,34 @@ const MenuCategory = () => {
     <div className="my-[30px] grid grid-cols-3 px-[10px] gap-[20px] ">
       <MenuCategoryNavLink
         url={"/"}
-        icon={<RiPencilRuler2Line className="text-[30px]" />}
+        icon={<RiPencilRuler2Line className="text-[30px] text-[#043334]" />}
         title={"Class"}
       />
       <MenuCategoryNavLink
         url={"/"}
-        icon={<SlBookOpen className="text-[30px]" />}
+        icon={<SlBookOpen className="text-[28px] text-[#043334]" />}
         title={"Home Work"}
       />
       <MenuCategoryNavLink
         url={"/"}
-        icon={<MdOutlineCoPresent className="text-[30px]" />}
-        title={"Exam & Result"}
+        icon={<MdOutlineCoPresent className="text-[30px] text-[#043334]" />}
+        title={"Exam"}
       />
+
       <MenuCategoryNavLink
         url={"/"}
-        icon={<TbCoinTaka className="text-[30px]" />}
+        icon={<TbCoinTaka className="text-[30px] text-[#043334]" />}
         title={"Fees"}
       />
 
       <MenuCategoryNavLink
         url={"/"}
-        icon={<FaRegLightbulb className="text-[30px]" />}
+        icon={<FaRegLightbulb className="text-[30px] text-[#043334]" />}
         title={"Notice"}
       />
       <MenuCategoryNavLink
         url={"/"}
-        icon={<MdOutlineCalendarMonth className="text-[30px]" />}
+        icon={<MdOutlineCalendarMonth className="text-[30px] text-[#043334]" />}
         title={"Leave"}
       />
     </div>
