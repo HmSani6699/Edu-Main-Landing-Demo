@@ -14,7 +14,7 @@ const MenuCategory = () => {
   return (
     <div className="my-[30px] grid grid-cols-3 px-[10px] gap-[20px] ">
       <MenuCategoryNavLink
-        url={"/"}
+        url={"/student-class"}
         icon={<RiPencilRuler2Line className="text-[30px] text-[#043334]" />}
         title={"Class"}
       />

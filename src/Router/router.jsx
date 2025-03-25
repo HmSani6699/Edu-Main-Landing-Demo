@@ -7,6 +7,7 @@ import Contact from "../Pages/Contact/Contact";
 import Admission from "../Pages/Admission/Admission";
 import ForgotPassword from "../Pages/Login/ForgotPassword";
 import StudentMobilrDashboard from "../Pages/Dashboard/Student/StudentMobileDashboard/StudentMobilrDashboard";
+import ClassList from "../Pages/Dashboard/Student/StudentMobileDashboard/ClassList";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "student-dashboard/:id",
         element: <StudentMobilrDashboard />,
+      },
+      {
+        path: "student-class",
+        element: <ClassList />,
       },
     ],
   },
