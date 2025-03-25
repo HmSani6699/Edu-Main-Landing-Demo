@@ -6,7 +6,7 @@ import { MdDashboard } from "react-icons/md";
 
 const DashboardBanner = () => {
   return (
-    <div className="banner_container text-white p-[20px] rounded-b-[20px] relative">
+    <div className="banner_container text-white p-[20px]  relative">
       <div className="absolute top-0 right-0">
         <img className="w-[100px]" src={shap_image} alt="shape" />
       </div>
