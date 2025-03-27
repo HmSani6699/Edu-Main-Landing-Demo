@@ -36,14 +36,14 @@ const MenuCategory = () => {
       />
 
       <MenuCategoryNavLink
-        url={"/notice"}
-        icon={<FaRegLightbulb className="text-[30px] text-[#043334]" />}
-        title={"Notice"}
-      />
-      <MenuCategoryNavLink
         url={"/student-leave"}
         icon={<MdOutlineCalendarMonth className="text-[30px] text-[#043334]" />}
         title={"Leave"}
+      />
+      <MenuCategoryNavLink
+        url={"/notice-board"}
+        icon={<FaRegLightbulb className="text-[30px] text-[#043334]" />}
+        title={"Notice"}
       />
     </div>
   );
