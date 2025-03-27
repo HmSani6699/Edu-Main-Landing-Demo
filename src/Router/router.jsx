@@ -8,6 +8,7 @@ import Admission from "../Pages/Admission/Admission";
 import ForgotPassword from "../Pages/Login/ForgotPassword";
 import StudentMobilrDashboard from "../Pages/Dashboard/Student/StudentMobileDashboard/StudentMobilrDashboard";
 import ClassList from "../Pages/Dashboard/Student/StudentMobileDashboard/ClassList";
+import HomeWork from "../Pages/Dashboard/Student/StudentMobileDashboard/HomeWork/HomeWork";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "student-class",
         element: <ClassList />,
+      },
+      {
+        path: "student-home-work",
+        element: <HomeWork />,
       },
     ],
   },

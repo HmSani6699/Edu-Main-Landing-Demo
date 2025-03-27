@@ -4,7 +4,6 @@ import Reveal from "../../../../Component/Reveal/Reveal";
 const ClassPeriodCard = ({ subject, time, img, name, period }) => {
   return (
     <Reveal>
-      {" "}
       <div className="border-[#07A698] border rounded-[20px] p-[10px]">
         <h2 className="text-[23px] text-[#043334]">{subject}</h2>
         <p className="text-gray-400">{time}</p>

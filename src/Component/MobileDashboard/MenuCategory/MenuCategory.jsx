@@ -19,29 +19,29 @@ const MenuCategory = () => {
         title={"Class"}
       />
       <MenuCategoryNavLink
-        url={"/"}
+        url={"/student-home-work"}
         icon={<SlBookOpen className="text-[28px] text-[#043334]" />}
         title={"Home Work"}
       />
       <MenuCategoryNavLink
-        url={"/"}
+        url={"/student-exam"}
         icon={<MdOutlineCoPresent className="text-[30px] text-[#043334]" />}
         title={"Exam"}
       />
 
       <MenuCategoryNavLink
-        url={"/"}
+        url={"/student-fees"}
         icon={<TbCoinTaka className="text-[30px] text-[#043334]" />}
         title={"Fees"}
       />
 
       <MenuCategoryNavLink
-        url={"/"}
+        url={"/notice"}
         icon={<FaRegLightbulb className="text-[30px] text-[#043334]" />}
         title={"Notice"}
       />
       <MenuCategoryNavLink
-        url={"/"}
+        url={"/student-leave"}
         icon={<MdOutlineCalendarMonth className="text-[30px] text-[#043334]" />}
         title={"Leave"}
       />
