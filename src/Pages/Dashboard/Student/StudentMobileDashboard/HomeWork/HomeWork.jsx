@@ -10,12 +10,6 @@ const HomeWork = () => {
   const [filterOpen, setFilterOpen] = useState(false);
   const [homeWorkDetailsOpen, setHomeWorkDetailsOpen] = useState("1");
 
-  const handleHomeWork = (id) => {
-    if (homeWorkDetailsOpen === id) {
-      setHomeWorkDetailsOpen("");
-    }
-    setHomeWorkDetailsOpen(id);
-  };
   return (
     <div>
       <SubBanner
@@ -64,7 +58,6 @@ const HomeWork = () => {
             }
             homeWorkDetailsOpen={homeWorkDetailsOpen}
             setHomeWorkDetailsOpen={setHomeWorkDetailsOpen}
-            handleHomeWork={handleHomeWork}
           />
         ))}
       </div>

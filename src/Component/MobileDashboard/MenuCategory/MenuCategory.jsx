@@ -24,7 +24,7 @@ const MenuCategory = () => {
         title={"Home Work"}
       />
       <MenuCategoryNavLink
-        url={"/student-exam"}
+        url={"/student-exam-result"}
         icon={<MdOutlineCoPresent className="text-[30px] text-[#043334]" />}
         title={"Exam"}
       />

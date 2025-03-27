@@ -9,6 +9,7 @@ import ForgotPassword from "../Pages/Login/ForgotPassword";
 import StudentMobilrDashboard from "../Pages/Dashboard/Student/StudentMobileDashboard/StudentMobilrDashboard";
 import ClassList from "../Pages/Dashboard/Student/StudentMobileDashboard/ClassList";
 import HomeWork from "../Pages/Dashboard/Student/StudentMobileDashboard/HomeWork/HomeWork";
+import ExamResult from "../Pages/Dashboard/Student/StudentMobileDashboard/ExamResult/ExamResult";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "student-home-work",
         element: <HomeWork />,
+      },
+      {
+        path: "student-exam-result",
+        element: <ExamResult />,
       },
     ],
   },

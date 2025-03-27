@@ -14,13 +14,12 @@ const HomeWorkViewCard = ({
   name,
   homeWorkDetailsOpen,
   setHomeWorkDetailsOpen,
-  handleHomeWork,
 }) => {
   return (
     <Reveal>
       <div className="border-[#07A698] border rounded-[5px]">
         <div
-          onClick={() => handleHomeWork(id)}
+          onClick={() => setHomeWorkDetailsOpen(id)}
           className="bg-[#07A698] px-[10px] py-[5px] rounded-t-[5px] flex items-center justify-between text-white"
         >
           <div className="flex items-center gap-[6px] ">
