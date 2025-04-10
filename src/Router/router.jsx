@@ -12,6 +12,7 @@ import HomeWork from "../Pages/Dashboard/Student/StudentMobileDashboard/HomeWork
 import ExamResult from "../Pages/Dashboard/Student/StudentMobileDashboard/ExamResult/ExamResult";
 import NoticeBoard from "../Component/MobileDashboard/NoticeBoard/NoticeBoard";
 import Fees from "../Pages/Dashboard/Student/StudentMobileDashboard/Fees/Fees";
+import Leave from "../Component/MobileDashboard/Leave/Leave";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "notice-board",
         element: <NoticeBoard />,
+      },
+      {
+        path: "leave",
+        element: <Leave />,
       },
 
       // ====== Student Dashboard <=====//

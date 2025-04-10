@@ -36,7 +36,7 @@ const MenuCategory = () => {
       />
 
       <MenuCategoryNavLink
-        url={"/student-leave"}
+        url={"/leave"}
         icon={<MdOutlineCalendarMonth className="text-[30px] text-[#043334]" />}
         title={"Leave"}
       />
