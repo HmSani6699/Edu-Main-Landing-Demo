@@ -4,10 +4,14 @@ import teacher from "../../../../public/teacher1.png";
 import TabMenu from "../TabMenu/TabMenu";
 
 const StudentClassPeriod = () => {
-  const [currentTab, setCurrentTab] = useState("Sat");
+  const [currentTab, setCurrentTab] = useState("sat");
   return (
     <div>
-      <TabMenu currentTab={currentTab} setCurrentTab={setCurrentTab} />
+      <TabMenu
+        options={["sat", "sun", "mon", "tue", "wed", "thu", "fri"]}
+        currentTab={currentTab}
+        setCurrentTab={setCurrentTab}
+      />
       <div className="px-[10px] flex flex-col gap-[20px] my-[30px]">
         <ClassPeriodCard
           subject={"Bangla"}

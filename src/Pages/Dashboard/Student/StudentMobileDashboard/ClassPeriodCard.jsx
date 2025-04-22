@@ -1,10 +1,15 @@
 import React from "react";
 import Reveal from "../../../../Component/Reveal/Reveal";
+import { useNavigate } from "react-router-dom";
 
 const ClassPeriodCard = ({ subject, time, img, name, period }) => {
+  const navigate = useNavigate();
   return (
     <Reveal>
-      <div className="border-[#07A698] border rounded-[20px] p-[10px]">
+      <div
+        onClick={() => navigate("/student-class-performance")}
+        className="border-[#07A698] border rounded-[20px] p-[10px]"
+      >
         <h2 className="text-[23px] text-[#043334]">{subject}</h2>
         <p className="text-gray-400">{time}</p>
         <div className="border border-gray-300 my-[10px]"></div>
