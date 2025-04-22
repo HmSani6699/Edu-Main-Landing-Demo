@@ -4,7 +4,7 @@ import shap_image from "../../../../public/testi-shape-1.png";
 import "./DashboardBanner.css";
 import { MdDashboard } from "react-icons/md";
 
-const DashboardBanner = () => {
+const DashboardBanner = ({ dashboardTitle }) => {
   return (
     <div className="banner_container text-white p-[20px]  relative">
       <div className="absolute top-0 right-0">
@@ -13,7 +13,7 @@ const DashboardBanner = () => {
 
       <div className="flex items-center gap-[7px]">
         <MdDashboard className="text-white" />
-        <h2>Student Dashboard</h2>
+        <h2>{dashboardTitle} Dashboard</h2>
       </div>
       <div className="flex items-center justify-between">
         <div>

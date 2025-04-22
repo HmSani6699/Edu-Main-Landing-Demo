@@ -158,7 +158,13 @@ const Navber = () => {
               <MobileNavlink
                 url={"/student-dashboard/1"}
                 icon={<img className="w-[30px]" src={user} alt="" />}
-                title={"Md: Sadiq"}
+                title={"Student"}
+                setIsOpenMenu={setIsOpenMenu}
+              />
+              <MobileNavlink
+                url={"/teacher-dashboard/1"}
+                icon={<img className="w-[30px]" src={user} alt="" />}
+                title={"Teacher"}
                 setIsOpenMenu={setIsOpenMenu}
               />
 

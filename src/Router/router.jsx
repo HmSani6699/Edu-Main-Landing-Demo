@@ -6,7 +6,7 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import Contact from "../Pages/Contact/Contact";
 import Admission from "../Pages/Admission/Admission";
 import ForgotPassword from "../Pages/Login/ForgotPassword";
-import StudentMobilrDashboard from "../Pages/Dashboard/Student/StudentMobileDashboard/StudentMobilrDashboard";
+import StudentMobilrDashboard from "../Pages/Dashboard/Student/StudentMobileDashboard/StudentMobileDashboard";
 import ClassList from "../Pages/Dashboard/Student/StudentMobileDashboard/ClassList";
 import HomeWork from "../Pages/Dashboard/Student/StudentMobileDashboard/HomeWork/HomeWork";
 import ExamResult from "../Pages/Dashboard/Student/StudentMobileDashboard/ExamResult/ExamResult";
@@ -14,6 +14,8 @@ import NoticeBoard from "../Component/MobileDashboard/NoticeBoard/NoticeBoard";
 import Fees from "../Pages/Dashboard/Student/StudentMobileDashboard/Fees/Fees";
 import Leave from "../Component/MobileDashboard/Leave/Leave";
 import ClassPerformance from "../Pages/Dashboard/Student/StudentMobileDashboard/ClassPerformance/ClassPerformance";
+import TeacherMobileDashboard from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherMobileDashboard";
+import StudentMobileDashboard from "../Pages/Dashboard/Student/StudentMobileDashboard/StudentMobileDashboard";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -55,7 +57,7 @@ const router = createBrowserRouter([
       // ====== Student Dashboard <=====//
       {
         path: "student-dashboard/:id",
-        element: <StudentMobilrDashboard />,
+        element: <StudentMobileDashboard />,
       },
       {
         path: "student-class",
@@ -76,6 +78,11 @@ const router = createBrowserRouter([
       {
         path: "student-fees",
         element: <Fees />,
+      },
+      // ====== Teacher Dashboard <=====//
+      {
+        path: "teacher-dashboard/:id",
+        element: <TeacherMobileDashboard />,
       },
     ],
   },
