@@ -2,6 +2,8 @@ import React from "react";
 import { BiSolidZap } from "react-icons/bi";
 import TeacherCard from "../../../Component/TeacherCard/TeacherCard";
 import Reveal from "../../../Component/Reveal/Reveal";
+import teacher1 from "../../../../public/Teacher/teacher5.png";
+import teacher2 from "../../../../public/Teacher/teacher6.png";
 
 const AllTeacher = () => {
   return (
@@ -27,9 +29,9 @@ const AllTeacher = () => {
       {/* =====> Teacher card <===== */}
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px] mt-[50px] ">
-        <TeacherCard />
-        <TeacherCard />
-        <TeacherCard />
+        <TeacherCard img={teacher1} />
+        <TeacherCard img={teacher2} />
+        <TeacherCard img={teacher1} />
       </div>
     </div>
   );

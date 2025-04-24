@@ -2,17 +2,13 @@ import React from "react";
 import teacher_img from "../../../public/teacher1.png";
 import Reveal from "../Reveal/Reveal";
 
-const TeacherCard = () => {
+const TeacherCard = ({ img }) => {
   return (
     <Reveal>
       {" "}
       <div className="border-[1px] rounded-[10px] shadow-md">
         <div className="teacher_bg_image h-[300px]  overflow-hidden">
-          <img
-            className="h-full w-full"
-            src={teacher_img}
-            alt="teacher image"
-          />
+          <img className="h-full w-full" src={img} alt="teacher image" />
         </div>
         <div className="p-[20px]">
           <h2 className="text-[#1D5276] text-center text-[20px] font-semibold">

@@ -12,6 +12,9 @@ import bannerRight from "../../../../public/bannerRight.png";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import Reveal from "../../../Component/Reveal/Reveal";
 
+import img1 from "../../../../public/im1.png";
+import img2 from "../../../../public/im2.png";
+
 const Banner = () => {
   return (
     <div className=" h-[560px] ">
@@ -19,8 +22,8 @@ const Banner = () => {
         {/* =====>left  content <==== */}
 
         <Reveal>
-          <div className="hidden lg:block">
-            <img src={bannerLeft} alt="" />
+          <div className="hidden lg:block mt-[50px]">
+            <img src={img1} alt="" />
           </div>
         </Reveal>
         {/* =====>Middle content <==== */}
@@ -34,7 +37,7 @@ const Banner = () => {
           </Reveal>
           <Reveal>
             <h2 className="lg:text-[35px] text-[25px] whitespace-nowrap font-bold text-white lg:mt-[10px] mt-[30px]">
-              পাকুন্ডা সরকারি প্রাথমিক বিদ্যালয়
+              আল-কুরআনুল কারীম একাডেমি
             </h2>
           </Reveal>
           <Reveal>
@@ -60,8 +63,8 @@ const Banner = () => {
         </div>
         {/* =====>right  content <==== */}
         <Reveal>
-          <div className="relative -z-50 hidden lg:block">
-            <img src={bannerRight} alt="" />
+          <div className="relative -z-50 hidden lg:block mt-[70px]">
+            <img src={img2} alt="" />
           </div>
         </Reveal>
       </div>

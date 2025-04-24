@@ -48,7 +48,7 @@ const Navber = () => {
 
       {/* ========= */}
 
-      <div className="flex items-center justify-between  max-w-[1060px] mx-auto">
+      <div className="lg:flex items-center justify-between  max-w-[1060px] mx-auto hidden">
         {/* ====> Edu English Name <==== */}
         <div className="text-center">
           <h2 className="text-[30px] font-bold">Al-Quranul Kareem Academy</h2>

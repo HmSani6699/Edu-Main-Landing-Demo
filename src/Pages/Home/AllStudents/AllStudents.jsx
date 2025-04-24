@@ -4,6 +4,14 @@ import Marquee from "react-fast-marquee";
 import student from "../../../../public/student.png";
 import { BiSolidZap } from "react-icons/bi";
 import Reveal from "../../../Component/Reveal/Reveal";
+import student1 from "../../../../public/student/student1.jpeg";
+import student2 from "../../../../public/student/student2.jpeg";
+import student3 from "../../../../public/student/student3.jpeg";
+import student4 from "../../../../public/student/student4.jpeg";
+import student5 from "../../../../public/student/student5.jpeg";
+import student6 from "../../../../public/student/student6.jpeg";
+import student7 from "../../../../public/student/student7.jpeg";
+import student8 from "../../../../public/student/student8.jpeg";
 
 const AllStudents = () => {
   return (
@@ -16,21 +24,30 @@ const AllStudents = () => {
                 <div className="bg-[#07a69826] p-[4px] rounded-full">
                   <BiSolidZap className="text-[#07A698]" />
                 </div>
-                আমাদের ছাত্র
+                আমাদের শিক্ষার্থী
               </button>
             </div>
           </Reveal>
           <Reveal>
             <p className="font-Baloo text-[#1D5276] mt-[20px] text-[30px] text-center  leading-[28px] font-[600]">
-              আমাদের ছাত্র বৃন্দ
+              আমাদের শিক্ষার্থী বৃন্দ
             </p>
           </Reveal>
         </div>
         <div className="flex items-center overflow-hidden mt-5 relative">
           <Marquee speed="40" pauseOnHover={true}>
             <div className="flex gap-5 mt-20">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9]?.map((allStudent, i) => (
-                <StudentCard key={i} />
+              {[
+                { name: "Sadiq", image: student1, address: "Pakunda" },
+                { name: "Najmul", image: student2, address: "Rupgonj" },
+                { name: "Noman", image: student3, address: "Baliyapara" },
+                { name: "Thalha", image: student4, address: "Monohordi" },
+                { name: "Al-Amin", image: student5, address: "Gaptoli" },
+                { name: "Jakir", image: student6, address: "Araihajar" },
+                { name: "Roni", image: student7, address: "Taltola" },
+                { name: "Parbase", image: student8, address: "Sirabo" },
+              ]?.map((item, i) => (
+                <StudentCard key={i} item={item} />
               ))}
             </div>
           </Marquee>
