@@ -45,6 +45,32 @@ const Navber = () => {
           </div>
         </div>
       </div>
+
+      {/* ========= */}
+
+      <div className="flex items-center justify-between  max-w-[1060px] mx-auto">
+        {/* ====> Edu English Name <==== */}
+        <div className="text-center">
+          <h2 className="text-[30px] font-bold">Al-Quranul Kareem Academy</h2>
+          <p className="font-semibold">Pakunda, Sonargon, Narayongonj</p>
+        </div>
+        {/* ====> Edu Logo <==== */}
+        <div className="w-[135px]">
+          <img src={logo} alt="" />
+        </div>
+        {/* ====> Edu Bangla
+          Name <==== */}
+        <div className="text-center">
+          <h2 className="text-[30px] font-bold">
+            أكاديمية القرآن الكريم الإسلامية التعليمية
+          </h2>
+          <p className="font-semibold">
+            بَكُونْدَا، سُونَارْغَاوْ، نَارَايَنْغَنْج
+          </p>
+        </div>
+      </div>
+
+      {/* ========= */}
       {/* ======> Main navber <====== */}
       <div className="bg-white ">
         <div className="hidden max-w-[1200px] mx-auto py-[10px] lg:flex items-center justify-between">
