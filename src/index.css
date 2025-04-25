@@ -14,7 +14,14 @@
 }
 
 .teacher_bg_image {
-  background-image: url("../public/teacher-shape.png");
+  background: linear-gradient(
+    to top,
+    #009f9542,
+    #009a9178,
+    #00968e5e,
+    #00928b2e,
+    #008e8800
+  );
 }
 
 .clip-hexagon {
