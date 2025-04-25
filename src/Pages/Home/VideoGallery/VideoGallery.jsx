@@ -27,10 +27,10 @@ const VideoGallery = () => {
               </h2>
             </div>
             <div className="lg:flex items-center gap-[20px] relative z-40 hidden ">
-              <button className=" cursor-pointer  bg-white p-[10px] rounded-full text-[#07A698]">
+              <button className=" cursor-pointer  hover:bg-gray-300 bg-white p-[10px] rounded-full text-[#07A698]">
                 <FaArrowLeft />
               </button>
-              <button className=" cursor-pointer  bg-white p-[10px] rounded-full text-[#07A698] rotate-[180deg]">
+              <button className=" cursor-pointer hover:bg-gray-300  bg-white p-[10px] rounded-full text-[#07A698] rotate-[180deg]">
                 <FaArrowLeft />
               </button>
             </div>
@@ -38,9 +38,9 @@ const VideoGallery = () => {
 
           {/* =====> Video section <==== */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px] relative z-40">
-            <VideoCard />
-            <VideoCard />
-            <VideoCard />
+            <VideoCard url={"Hv8yinlIWJ8"} />
+            <VideoCard url={"YHMEcsyWo4s"} />
+            <VideoCard url={"RfViGSywCxA"} />
           </div>
         </div>
       </div>
