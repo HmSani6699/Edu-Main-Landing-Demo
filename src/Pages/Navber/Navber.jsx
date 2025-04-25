@@ -11,7 +11,7 @@ import NavLink from "../../Component/NavLink/NavLink";
 import { TbLogin2 } from "react-icons/tb";
 import { RiCloseLargeLine, RiMenu3Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import user from "../../../public/teacher1.png";
+import user from "../../../public/Teacher/teacher6-2.png";
 import { IoMdSchool } from "react-icons/io";
 import MobileNavlink from "../../Component/NavLink/MobileNavlink";
 
