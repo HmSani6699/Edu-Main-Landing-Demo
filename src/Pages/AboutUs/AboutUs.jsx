@@ -2,13 +2,83 @@ import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
 import AboutBanner from "./AboutBanner/AboutBanner";
-import teacher from "../../../public/teacher1.png";
+import teacher from "../../../public/Teacher/teacher6.png";
 import target_icon from "../../../public/target_icon.svg";
 import target_bottom from "../../../public/target_bottom.png";
 import about from "../../../public/about1.jpg";
 import Reveal from "../../Component/Reveal/Reveal";
 
+import teacher1 from "../../../public/Teacher/teacher1.png";
+import teacher2 from "../../../public/Teacher/teacher2.png";
+import teacher3 from "../../../public/Teacher/teacher3.png";
+import teacher4 from "../../../public/Teacher/teacher4.png";
+import teacher5 from "../../../public/Teacher/teacher5.png";
+import teacher6 from "../../../public/Teacher/teacher6.png";
+
 const AboutUs = () => {
+  const allTeachers = [
+    {
+      id: 5,
+      name: "Noman Hossain",
+      position: "English Teacher",
+      img: teacher5,
+    },
+    {
+      id: 6,
+      name: "Nasir Uddin",
+      position: "Bangla Teacher",
+      img: teacher6,
+    },
+    {
+      id: 5,
+      name: "Noman Hossain",
+      position: "English Teacher",
+      img: teacher5,
+    },
+    {
+      id: 6,
+      name: "Nasir Uddin",
+      position: "Bangla Teacher",
+      img: teacher6,
+    },
+    {
+      id: 6,
+      name: "Nasir Uddin",
+      position: "Bangla Teacher",
+      img: teacher6,
+    },
+    {
+      id: 1,
+      name: "Sadiqur Rahman",
+      position: "Founder & Principal",
+      img: teacher1,
+    },
+    {
+      id: 2,
+      name: "Mahfuj Alom",
+      position: "Hadis Teacher",
+      img: teacher2,
+    },
+    {
+      id: 3,
+      name: "Jubayer Hossain",
+      position: "Bangla Teacher",
+      img: teacher3,
+    },
+    {
+      id: 4,
+      name: "Mominul Islam",
+      position: "Arabic Teacher",
+      img: teacher4,
+    },
+    {
+      id: 4,
+      name: "Mominul Islam",
+      position: "Arabic Teacher",
+      img: teacher4,
+    },
+  ];
+
   return (
     <div>
       {/* =====> Menu Derication <==== */}
@@ -25,9 +95,7 @@ const AboutUs = () => {
       {/* ====> Funder <===== */}
       <div className=" w-full md:w-[754px] lg:w-[813px] mx-auto   mt-[50px]  px-[10px]">
         <Reveal>
-          {" "}
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10 border-2 p-4 border-[#53DFC3] bg-[#F5F5F5] rounded-[12px]">
-            {" "}
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10 border-2  border-[#53DFC3] bg-[#F5F5F5] rounded-[12px]">
             <div className="w-full ">
               <Reveal>
                 <img className="h-[340px] w-full" src={teacher} alt="" />
@@ -36,50 +104,27 @@ const AboutUs = () => {
             <div className="flex flex-col gap-4">
               <div>
                 <Reveal>
-                  {" "}
                   <h1 className=" text_black text-[14px] font-[400] leading-[18px] ">
                     We provide Computer training to students for doing
                     freelancing and IT jobs. Because of providing offline and
                     online training, sometimes we face electricity and internet
                     issues.
-                  </h1>{" "}
+                  </h1>
                 </Reveal>
               </div>
               <div>
                 <Reveal>
-                  {" "}
                   <h1 className=" text-[#2872A4] text-[20px] font-[600] leading-[28px] ">
-                    ইব্রাহিম আকবর
+                    মাওলানা আবু বকর সিদ্দিক
                   </h1>
                 </Reveal>
                 <Reveal>
-                  {" "}
                   <h1 className=" text_black_tow text-[14px] font-[500] leading-[18px] ">
-                    চেয়রম্যান এবং সিইও, ইশিখন.কম
+                    অত্র মাদ্রাসার প্রিন্সিপাল
                   </h1>
                 </Reveal>
               </div>
-              <div className="flex flex-col gap-2 ">
-                <div className="flex flex-row gap-2 items-center">
-                  {/* <img src={fore_kon_star_icon} alt="" /> */}
 
-                  <Reveal>
-                    {" "}
-                    <h1 className=" text_black_gray text-[14px] font-[500] leading-[14px] mt-1">
-                      সফল এন্টারপ্রেনিয়র
-                    </h1>
-                  </Reveal>
-                </div>
-                <div className="flex flex-row gap-2 items-center">
-                  {/* <img src={fore_kon_star_icon} alt="" /> */}
-                  <Reveal>
-                    {" "}
-                    <h1 className=" text_black_gray text-[14px] font-[500] leading-[14px] mt-1">
-                      সফল এন্টারপ্রেনিয়র
-                    </h1>
-                  </Reveal>
-                </div>
-              </div>
               {/* <div className="flex items-center gap-5 ">
               <img src={fb_icon} alt="" />
               <img src={messenger_icon} alt="" />
@@ -94,23 +139,22 @@ const AboutUs = () => {
       {/* =====> Instructor <====== */}
       <div className="w-full lg:max-w-[1096px] mx-auto py-10  bg-[#F5F5F5] rounded-[10px] px-5 relative lg:mt-[40px]">
         <div className="mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 ">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]?.map(() => (
+          {allTeachers?.map((item, i) => (
             <Reveal>
-              {" "}
-              <div className="w-[186px] mx-auto bg-white rounded-[5px]">
+              <div key={i} className="w-[186px] mx-auto bg-white rounded-[5px]">
                 <div className=" h-16 overflow-hidden bg-[#F5F5F5]"></div>
                 <div className="mx-auto w-24 h-24 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
                   <img
                     className="object-cover object-center h-32"
-                    src={teacher}
+                    src={item?.img}
                   />
                 </div>
                 <div className="p-3 mt- text-center">
                   <h1 className=" text-black text-[20px] font-[600] leading-[28px] ">
-                    ইব্রাহিম আকবর
+                    {item?.name}
                   </h1>
                   <h1 className=" text_black_tow text-[14px] font-[500] leading-[18px] ">
-                    ম্যানেজার
+                    {item?.position}
                   </h1>
                 </div>
               </div>
