@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
 import AboutBanner from "./AboutBanner/AboutBanner";
@@ -16,6 +16,8 @@ import teacher5 from "../../../public/Teacher/teacher5.png";
 import teacher6 from "../../../public/Teacher/teacher6.png";
 
 const AboutUs = () => {
+  const [openTabe, setOpenTabe] = useState(1);
+
   const allTeachers = [
     {
       id: 5,
@@ -79,6 +81,13 @@ const AboutUs = () => {
     },
   ];
 
+  const myGols = [
+    { id: 1, title: "উদ্দেশ্য" },
+    { id: 2, title: "লক্ষ্য" },
+    { id: 3, title: "হিস্টোরি" },
+    { id: 4, title: "ভ্যালু" },
+  ];
+
   return (
     <div>
       {/* =====> Menu Derication <==== */}
@@ -105,10 +114,11 @@ const AboutUs = () => {
               <div>
                 <Reveal>
                   <h1 className=" text_black text-[14px] font-[400] leading-[18px] ">
-                    We provide Computer training to students for doing
-                    freelancing and IT jobs. Because of providing offline and
-                    online training, sometimes we face electricity and internet
-                    issues.
+                    অত্র একাডেমির প্রিন্সিপাল একজন মেধাবী, অভিজ্ঞ ও শিক্ষানুরাগী
+                    ব্যক্তিত্ব, যিনি শিক্ষার্থীদের নৈতিকতা ও আধুনিক শিক্ষার
+                    সমন্বয়ে গড়ে তুলতে দৃঢ় প্রতিশ্রুতিবদ্ধ। তাঁর দক্ষ নেতৃত্বে
+                    প্রতিষ্ঠানটি শিক্ষাক্ষেত্রে একটি গ্রহণযোগ্য অবস্থান তৈরি
+                    করেছে।
                   </h1>
                 </Reveal>
               </div>
@@ -124,13 +134,6 @@ const AboutUs = () => {
                   </h1>
                 </Reveal>
               </div>
-
-              {/* <div className="flex items-center gap-5 ">
-              <img src={fb_icon} alt="" />
-              <img src={messenger_icon} alt="" />
-              <img src={whatsapp_icon} alt="" />
-              <img src={linkedin_icon} alt="" />
-            </div> */}
             </div>
           </div>
         </Reveal>
@@ -177,35 +180,130 @@ const AboutUs = () => {
             <div className="w-full lg:max-w-[818px] p-2 md:p-4 lg:p-10 bg-[#F1F2F3] rounded-[20px] mx-auto">
               <div className="flex flex-col md:flex-row gap-3 md:gap-5 relative">
                 <div className="w-full md:max-w-[178px] flex flex-row md:flex-col gap-2.5 overflow-auto">
-                  <button className="w-full py-5 px-8 bg-white rounded-[5px] flex flex-row items-center text-[#20AC90] text-[20px] font-[500] leading-[18px] gap-2.5 border-s-2 border-[#20AC90] justify-center">
-                    <img src={target_icon} alt="" />
-                    উদ্দেশ্য
-                  </button>
-                  <button className="w-full py-5 px-8 bg-white rounded-[5px] flex flex-row items-center text_black text-[20px] font-[500] leading-[18px] gap-2.5 justify-center">
-                    <img src={target_icon} alt="" />
-                    লক্ষ্য
-                  </button>
-                  <button className="w-full py-5 px-8 bg-white rounded-[5px] flex flex-row items-center text_black text-[20px] font-[500] leading-[18px] gap-2.5 justify-center">
-                    <img src={target_icon} alt="" />
-                    হিস্টোরি
-                  </button>
-                  <button className="w-full py-5 px-8 bg-white rounded-[5px] flex flex-row items-center text_black text-[20px] font-[500] leading-[18px] gap-2.5 justify-center">
-                    <img src={target_icon} alt="" />
-                    ভ্যালু
-                  </button>
+                  {myGols?.map((item, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setOpenTabe(item?.id)}
+                      className={`w-full py-5 px-8 bg-white rounded-[5px] flex flex-row items-center  text-[20px] font-[500] leading-[18px] gap-2.5  justify-center ${
+                        openTabe === item?.id
+                          ? "border-s-2 border-[#20AC90] text-[#20AC90] "
+                          : " text-black"
+                      }`}
+                    >
+                      <img src={target_icon} alt="" />
+                      {item?.title}
+                    </button>
+                  ))}
                 </div>
-                <div className="w-full p-3 md:p-10 bg-white rounded-[10px]">
-                  <h1 className="text_black text-[20px] md:text-[28px] font-[600] leading-[28px] md:leading-[48px]">
-                    উদ্দেশ্য
-                  </h1>
-                  <h1 className="text_black text-[14px] lg:text-[18px] font-[400] lg:font-[500] leading-[18px] lg:leading-[28px]">
-                    যুবশক্তিকে কাজে লাগিয়ে অত্যাধুনিক ও মানসম্পন্ন প্রশিক্ষণ
-                    পদ্ধতি নিশ্চিত করে দেশের মানুষকে ক্ষমতায়ন করা।
-                  </h1>
-                </div>
-                <div className="hidden md:block absolute right-4 bottom-0">
-                  <img src={target_bottom} alt="" />
-                </div>
+
+                {openTabe === 1 ? (
+                  <div className="bg-white rounded-[10px]">
+                    <div className="w-full p-3 md:p-10 bg-white rounded-[10px]">
+                      <h1 className="text_black text-[20px] md:text-[28px] font-[600] leading-[28px] md:leading-[48px]">
+                        উদ্দেশ্য
+                      </h1>
+                      <h1 className="text_black text-[14px] lg:text-[18px] font-[400] lg:font-[500] leading-[18px] lg:leading-[28px] relative z-50">
+                        আমাদের লক্ষ্য হলো উচ্চমানের, সহজলভ্য শিক্ষা প্রদান করা
+                        যা জ্ঞান এবং বাস্তব-জগতের প্রয়োগের মধ্যে ব্যবধান পূরণ
+                        করে। বিশেষজ্ঞ-নেতৃত্বাধীন কোর্স, উন্নত প্রযুক্তি এবং
+                        একটি সহায়ক সম্প্রদায়ের মাধ্যমে, আমরা শিক্ষার্থীদের
+                        তাদের ক্যারিয়ার এবং তার পরেও সাফল্যের জন্য ক্ষমতায়িত
+                        করি।
+                      </h1>
+                    </div>
+                    <div className="hidden md:block absolute right-4 bottom-0">
+                      <img src={target_bottom} alt="" />
+                    </div>
+                  </div>
+                ) : openTabe === 2 ? (
+                  <div className="bg-white rounded-[10px]">
+                    <div className="w-full p-3 md:p-10 bg-white rounded-[10px]">
+                      <h1 className="text_black text-[20px] md:text-[28px] font-[600] leading-[28px] md:leading-[48px]">
+                        লক্ষ্য
+                      </h1>
+                      <h1 className="text_black text-[14px] lg:text-[18px] font-[400] lg:font-[500] leading-[18px] lg:leading-[28px] relative z-50">
+                        আমরা একটি অগ্রণী শিক্ষা প্রতিষ্ঠান হিসেবে নিজেদের গড়ে
+                        তুলতে চাই, যেখানে প্রযুক্তিনির্ভর, গবেষণাভিত্তিক এবং
+                        জীবনমুখী শিক্ষার সমন্বয়ে ছাত্রছাত্রীরা আগামী দিনের
+                        বিশ্বনাগরিক হিসেবে প্রস্তুত হবে। আমাদের দৃষ্টিভঙ্গি হলো
+                        একটি আলোকিত ও শিক্ষিত প্রজন্ম গড়ে তোলা।
+                      </h1>
+                    </div>
+                    <div className="hidden md:block absolute right-4 bottom-0">
+                      <img src={target_bottom} alt="" />
+                    </div>
+                  </div>
+                ) : openTabe === 3 ? (
+                  <div>
+                    <div className="w-full p-3 md:p-10 bg-white rounded-[10px]">
+                      <h1 className="text_black text-[20px] md:text-[28px] font-[600] leading-[28px] md:leading-[48px]">
+                        হিস্টোরি
+                      </h1>
+                      <h1 className="text_black text-[14px] lg:text-[18px] font-[400] lg:font-[500] leading-[18px] lg:leading-[28px] relative z-50">
+                        আমরা একটি অগ্রণী শিক্ষা প্রতিষ্ঠান হিসেবে নিজেদের গড়ে
+                        তুলতে চাই, যেখানে প্রযুক্তিনির্ভর, গবেষণাভিত্তিক এবং
+                        জীবনমুখী শিক্ষার সমন্বয়ে ছাত্রছাত্রীরা আগামী দিনের
+                        বিশ্বনাগরিক হিসেবে প্রস্তুত হবে। আমাদের দৃষ্টিভঙ্গি হলো
+                        একটি আলোকিত ও শিক্ষিত প্রজন্ম গড়ে তোলা।
+                      </h1>
+                    </div>
+                    <div className="hidden md:block absolute right-4 bottom-0">
+                      <img src={target_bottom} alt="" />
+                    </div>
+                  </div>
+                ) : openTabe === 4 ? (
+                  <div className="bg-white rounded-[10px]">
+                    <div className="w-full p-3 md:p-10 bg-white rounded-[10px]">
+                      <h1 className="text_black text-[20px] md:text-[28px] font-[600] leading-[28px] md:leading-[48px]">
+                        ভ্যালু
+                      </h1>
+                      <h1 className="text_black text-[14px] lg:text-[18px] font-[400] lg:font-[500] leading-[18px] lg:leading-[28px]">
+                        <div className="flex flex-col gap-[10px]">
+                          <div className="flex items-center gap-[10px]">
+                            <button className="text-[#07A698] bg-white shadow-lg  h-[30px] w-[30px] rounded-full text-[14px] ">
+                              01
+                            </button>
+                            <p className="text-[14px]">
+                              শিক্ষার্থীদের মধ্যে নেতৃত্ব, সৃজনশীলতা এবং সমস্যা
+                              সমাধানের দক্ষতা তৈরি করা।
+                            </p>
+                          </div>
+
+                          <div className="flex items-center gap-[10px]">
+                            <button className="text-[#07A698] bg-white shadow-lg  h-[30px] w-[30px] rounded-full text-[14px] ">
+                              02
+                            </button>
+                            <p className="text-[14px]">
+                              প্রযুক্তি ও আধুনিক শিক্ষাদান পদ্ধতির ব্যবহার
+                              নিশ্চিত করা।
+                            </p>
+                          </div>
+                          <div className="flex items-center gap-[10px]">
+                            <button className="text-[#07A698] bg-white shadow-lg  h-[30px] w-[30px] rounded-full text-[14px] ">
+                              03
+                            </button>
+                            <p className="text-[14px] relative z-50">
+                              নৈতিকতা ও মূল্যবোধ ভিত্তিক শিক্ষা বিস্তারে কাজ
+                              করা।
+                            </p>
+                          </div>
+                          <div className="flex items-center gap-[10px]">
+                            <button className="text-[#07A698] bg-white shadow-lg  h-[30px] w-[30px] rounded-full text-[14px] ">
+                              04
+                            </button>
+                            <p className="text-[14px] relative z-50">
+                              জাতীয় ও আন্তর্জাতিক পর্যায়ে শিক্ষার মান উন্নয়ন ও
+                              স্বীকৃতি অর্জন।
+                            </p>
+                          </div>
+                        </div>
+                      </h1>
+                    </div>
+                    <div className="hidden md:block absolute right-4 bottom-0">
+                      <img src={target_bottom} alt="" />
+                    </div>
+                  </div>
+                ) : null}
               </div>
             </div>
           </div>
