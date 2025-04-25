@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import SubBanner from "../SubBanner/SubBanner";
 import { RiPencilRuler2Line } from "react-icons/ri";
 import { PiStudentFill } from "react-icons/pi";
 import { MdOutlineLibraryBooks } from "react-icons/md";
+import ClassStudents from "../../../Pages/Dashboard/Teacher/TeacherMobileDashboard/ClassStudents/ClassStudents";
 
 const ClassManagment = () => {
+  const [openTabe, setOpenTabe] = useState("student");
   return (
     <div>
       <SubBanner
@@ -15,15 +17,28 @@ const ClassManagment = () => {
 
       {/* ==== Short Tab ==== */}
       <div className="flex items-center justify-around my-[20px]">
-        <button className="flex flex-col items-center justify-center">
+        <button
+          onClick={() => setOpenTabe("student")}
+          className={`flex flex-col items-center justify-center ${
+            openTabe === "student" ? "text-[#07A698]" : "text-black"
+          }`}
+        >
           <PiStudentFill className="text-[40px]" />
-          <h2>Student</h2>
+          <h2 className="text-black">Student</h2>
         </button>
-        <button className="flex flex-col items-center justify-center">
+        <button
+          onClick={() => setOpenTabe("attendance")}
+          className={`flex flex-col items-center justify-center ${
+            openTabe === "attendance" ? "text-[#07A698]" : "text-black"
+          }`}
+        >
           <MdOutlineLibraryBooks className="text-[40px]" />
-          <h2>Attendance</h2>
+          <h2 className="text-black">Attendance</h2>
         </button>
       </div>
+
+      {/* ==== Class Studetn ===== */}
+      <ClassStudents studentShowRole={openTabe} />
     </div>
   );
 };
