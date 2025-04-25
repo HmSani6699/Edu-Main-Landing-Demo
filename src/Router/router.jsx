@@ -16,6 +16,7 @@ import Leave from "../Component/MobileDashboard/Leave/Leave";
 import ClassPerformance from "../Pages/Dashboard/Student/StudentMobileDashboard/ClassPerformance/ClassPerformance";
 import TeacherMobileDashboard from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherMobileDashboard";
 import StudentMobileDashboard from "../Pages/Dashboard/Student/StudentMobileDashboard/StudentMobileDashboard";
+import ClassManagment from "../Component/MobileDashboard/TeacherClassPeriod/ClassManagment";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -83,6 +84,10 @@ const router = createBrowserRouter([
       {
         path: "teacher-dashboard/:id",
         element: <TeacherMobileDashboard />,
+      },
+      {
+        path: "class_managment",
+        element: <ClassManagment />,
       },
     ],
   },

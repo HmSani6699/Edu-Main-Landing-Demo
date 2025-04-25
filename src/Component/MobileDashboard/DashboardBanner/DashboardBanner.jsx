@@ -1,5 +1,5 @@
 import React from "react";
-import user from "../../../../public/teacher1.png";
+import user from "../../../../public/Teacher/teacher6-2.png";
 import shap_image from "../../../../public/testi-shape-1.png";
 import "./DashboardBanner.css";
 import { MdDashboard } from "react-icons/md";
