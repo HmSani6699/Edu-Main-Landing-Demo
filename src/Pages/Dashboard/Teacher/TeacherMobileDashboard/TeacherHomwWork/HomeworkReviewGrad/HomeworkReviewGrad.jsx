@@ -1,25 +1,25 @@
 import React from "react";
-import HomeworkReviewGradCard from "./HomeworkReviewGradCard";
+import HomeworkReviewGradList from "./HomeworkReviewGradList";
 
 const HomeworkReviewGrad = () => {
   return (
     <div className="px-[10px] flex flex-col gap-[20px] my-[30px] ">
-      <HomeworkReviewGradCard
+      <HomeworkReviewGradList
         subject={"Bangla"}
         assigenDate={"10 April 2025"}
         submissionDate={"10 April 2025"}
       />
-      <HomeworkReviewGradCard
+      <HomeworkReviewGradList
         subject={"Bangla"}
         assigenDate={"10 April 2025"}
         submissionDate={"10 April 2025"}
       />
-      <HomeworkReviewGradCard
+      <HomeworkReviewGradList
         subject={"Bangla"}
         assigenDate={"10 April 2025"}
         submissionDate={"10 April 2025"}
       />
-      <HomeworkReviewGradCard
+      <HomeworkReviewGradList
         subject={"Bangla"}
         assigenDate={"10 April 2025"}
         submissionDate={"10 April 2025"}
