@@ -20,6 +20,7 @@ import TeacherClassList from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/
 import TeacherHomwWork from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherHomwWork/TeacherHomwWork";
 import StudentHomeWork from "../Pages/Dashboard/Student/StudentMobileDashboard/StudentHomeWork/StudentHomeWork";
 import HomeworkReviewGradCard from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherHomwWork/HomeworkReviewGrad/HomeworkReviewGradCard";
+import TeacherSalary from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherSalary/TeacherSalary";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -107,6 +108,10 @@ const router = createBrowserRouter([
       {
         path: "teacher-home-work-review-grade-card/:id",
         element: <HomeworkReviewGradCard />,
+      },
+      {
+        path: "teacher-salary",
+        element: <TeacherSalary />,
       },
     ],
   },

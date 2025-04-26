@@ -26,7 +26,7 @@ const TeacherMobileDashboard = () => {
       title: "Exam",
     },
     {
-      url: "/student-fees",
+      url: "/teacher-salary",
       icon: <TbCoinTaka className="text-[30px] text-[#043334]" />,
       title: "Salary",
     },
