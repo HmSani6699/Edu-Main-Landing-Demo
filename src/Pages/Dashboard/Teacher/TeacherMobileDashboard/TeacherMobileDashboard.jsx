@@ -16,7 +16,7 @@ const TeacherMobileDashboard = () => {
       title: "Class",
     },
     {
-      url: "/student-home-work",
+      url: "/teacher-home-work/1",
       icon: <SlBookOpen className="text-[28px] text-[#043334]" />,
       title: "Home Work",
     },

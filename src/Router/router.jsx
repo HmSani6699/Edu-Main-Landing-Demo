@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login/Login";
@@ -6,9 +6,7 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import Contact from "../Pages/Contact/Contact";
 import Admission from "../Pages/Admission/Admission";
 import ForgotPassword from "../Pages/Login/ForgotPassword";
-import StudentMobilrDashboard from "../Pages/Dashboard/Student/StudentMobileDashboard/StudentMobileDashboard";
 import ClassList from "../Pages/Dashboard/Student/StudentMobileDashboard/ClassList";
-import HomeWork from "../Pages/Dashboard/Student/StudentMobileDashboard/HomeWork/HomeWork";
 import ExamResult from "../Pages/Dashboard/Student/StudentMobileDashboard/ExamResult/ExamResult";
 import NoticeBoard from "../Component/MobileDashboard/NoticeBoard/NoticeBoard";
 import Fees from "../Pages/Dashboard/Student/StudentMobileDashboard/Fees/Fees";
@@ -18,8 +16,9 @@ import TeacherMobileDashboard from "../Pages/Dashboard/Teacher/TeacherMobileDash
 import StudentMobileDashboard from "../Pages/Dashboard/Student/StudentMobileDashboard/StudentMobileDashboard";
 import ClassManagment from "../Component/MobileDashboard/TeacherClassPeriod/ClassManagment";
 import StudentMobileProfile from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/StudentMobileProfile/StudentMobileProfile";
-import TeacherClassPeriod from "../Component/MobileDashboard/TeacherClassPeriod/TeacherClassPeriod";
 import TeacherClassList from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherClassList/TeacherClassList";
+import TeacherHomwWork from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherHomwWork/TeacherHomwWork";
+import StudentHomeWork from "../Pages/Dashboard/Student/StudentMobileDashboard/StudentHomeWork/StudentHomeWork";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -73,7 +72,7 @@ const router = createBrowserRouter([
       },
       {
         path: "student-home-work",
-        element: <HomeWork />,
+        element: <StudentHomeWork />,
       },
       {
         path: "student-exam-result",
@@ -99,6 +98,10 @@ const router = createBrowserRouter([
       {
         path: "teacher_class",
         element: <TeacherClassList />,
+      },
+      {
+        path: "teacher-home-work/:id",
+        element: <TeacherHomwWork />,
       },
     ],
   },
