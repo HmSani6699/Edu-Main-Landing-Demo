@@ -4,6 +4,8 @@ import SubBanner from "../../../../../Component/MobileDashboard/SubBanner/SubBan
 import { MdOutlineLibraryBooks } from "react-icons/md";
 import { FaRegPenToSquare } from "react-icons/fa6";
 import Homework from "../../../../../Component/MobileDashboard/Homework/Homework";
+import HomeworkCreateUpdate from "./HomeworkCreateUpdate/HomeworkCreateUpdate";
+import HomeworkReviewGrad from "./HomeworkReviewGrad/HomeworkReviewGrad";
 
 const TeacherHomwWork = () => {
   const [openTabe, setOpenTabe] = useState("homework");
@@ -47,7 +49,14 @@ const TeacherHomwWork = () => {
       </div>
 
       {/* ====> Homework part <===== */}
-      <Homework />
+
+      {openTabe === "homework" ? (
+        <Homework />
+      ) : openTabe === "create_homework" ? (
+        <HomeworkCreateUpdate />
+      ) : openTabe === "review_grade" ? (
+        <HomeworkReviewGrad />
+      ) : null}
     </div>
   );
 };
