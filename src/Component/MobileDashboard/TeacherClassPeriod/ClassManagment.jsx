@@ -10,7 +10,7 @@ const ClassManagment = () => {
   return (
     <div>
       <SubBanner
-        url={"/student-dashboard/1"}
+        url={"/teacher-dashboard/1"}
         icon={<RiPencilRuler2Line className="text-[28px] " />}
         title={"Class Management"}
       />

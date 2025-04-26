@@ -11,7 +11,7 @@ import TeacherClassPeriod from "../../../../Component/MobileDashboard/TeacherCla
 const TeacherMobileDashboard = () => {
   const options = [
     {
-      url: "/student-class",
+      url: "/teacher_class",
       icon: <RiPencilRuler2Line className="text-[30px] text-[#043334]" />,
       title: "Class",
     },

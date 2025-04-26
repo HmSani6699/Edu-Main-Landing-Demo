@@ -18,6 +18,8 @@ import TeacherMobileDashboard from "../Pages/Dashboard/Teacher/TeacherMobileDash
 import StudentMobileDashboard from "../Pages/Dashboard/Student/StudentMobileDashboard/StudentMobileDashboard";
 import ClassManagment from "../Component/MobileDashboard/TeacherClassPeriod/ClassManagment";
 import StudentMobileProfile from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/StudentMobileProfile/StudentMobileProfile";
+import TeacherClassPeriod from "../Component/MobileDashboard/TeacherClassPeriod/TeacherClassPeriod";
+import TeacherClassList from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherClassList/TeacherClassList";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -93,6 +95,10 @@ const router = createBrowserRouter([
       {
         path: "student_profile/:id",
         element: <StudentMobileProfile />,
+      },
+      {
+        path: "teacher_class",
+        element: <TeacherClassList />,
       },
     ],
   },
