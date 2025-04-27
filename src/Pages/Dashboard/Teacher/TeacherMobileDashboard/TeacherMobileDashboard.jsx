@@ -21,7 +21,7 @@ const TeacherMobileDashboard = () => {
       title: "Home Work",
     },
     {
-      url: "/student-exam-result",
+      url: "/teacher-exam-result",
       icon: <MdOutlineCoPresent className="text-[30px] text-[#043334]" />,
       title: "Exam",
     },
