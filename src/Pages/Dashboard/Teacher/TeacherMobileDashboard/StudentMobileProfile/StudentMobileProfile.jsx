@@ -5,7 +5,7 @@ import { MdOutlineAddLocationAlt, MdOutlineLocationOn } from "react-icons/md";
 const StudentMobileProfile = () => {
   return (
     <div>
-      <ProfileBanner />
+      <ProfileBanner url={"/class_managment"} />
       <div className="p-4 max-w-md mx-auto">
         <h2 className="text-lg font-semibold text-gray-800 mb-2">
           Performance Overview

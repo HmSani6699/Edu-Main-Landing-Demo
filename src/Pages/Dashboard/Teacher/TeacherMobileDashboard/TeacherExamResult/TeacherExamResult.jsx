@@ -8,7 +8,7 @@ const TeacherExamResult = () => {
   return (
     <div>
       <SubBanner
-        url={"/student-dashboard/1"}
+        url={"/teacher-dashboard/1"}
         icon={<MdOutlineCoPresent className="text-[28px] " />}
         title={"Exam Result"}
       />

@@ -1,9 +1,14 @@
 import React from "react";
 import { LuClock } from "react-icons/lu";
+import { useNavigate } from "react-router-dom";
 
 const ExamResultLIstCard = ({ examName, img, dateTime, discription }) => {
+  const navigate = useNavigate();
   return (
-    <div className={`border-2 shadow-sm rounded-[10px] p-[10px] `}>
+    <div
+      onClick={() => navigate("/teacher-exam-result-details")}
+      className={`border-2 shadow-sm rounded-[10px] p-[10px] cursor-pointer`}
+    >
       <button className=" bg-[#07a6981c] text-[#07a698] px-[12px] py-[2px] mb-[8px] rounded-[4px]">
         <h2 className="whitespace-nowrap">{examName}</h2>
       </button>

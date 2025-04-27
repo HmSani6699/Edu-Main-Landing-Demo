@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import student from "../../../../../../../public/student/student1.jpeg";
 import shap_image from "../../../../../../../public/testi-shape-1.png";
 
-const ProfileBanner = () => {
+const ProfileBanner = ({ url }) => {
   return (
     <div className="pb-[50px]">
       {/* =======> Basic <==== */}
@@ -15,7 +15,7 @@ const ProfileBanner = () => {
           <img className="w-[100px]" src={shap_image} alt="shape" />
         </div>
         <div className=" flex items-center gap-[5px]">
-          <Link to={"/class_managment"}>
+          <Link to={url}>
             <IoArrowBackOutline className="text-[20px]" />
           </Link>
           <h2>Sadiq</h2>

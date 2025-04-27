@@ -22,6 +22,9 @@ import StudentHomeWork from "../Pages/Dashboard/Student/StudentMobileDashboard/S
 import HomeworkReviewGradCard from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherHomwWork/HomeworkReviewGrad/HomeworkReviewGradCard";
 import TeacherSalary from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherSalary/TeacherSalary";
 import TeacherExamResult from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherExamResult/TeacherExamResult";
+import ExamResultDetails from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherExamResult/ExamResultDetails";
+import ExamResultCreateUpdate from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherExamResult/ExamResultCreateUpdate";
+import ExamResultReportView from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherExamResult/ExamResultReportView";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -117,6 +120,18 @@ const router = createBrowserRouter([
       {
         path: "teacher-exam-result",
         element: <TeacherExamResult />,
+      },
+      {
+        path: "teacher-exam-result-details",
+        element: <ExamResultDetails />,
+      },
+      {
+        path: "teacher-exam-result-create-update",
+        element: <ExamResultCreateUpdate />,
+      },
+      {
+        path: "teacher-exam-result-report-view",
+        element: <ExamResultReportView />,
       },
     ],
   },
