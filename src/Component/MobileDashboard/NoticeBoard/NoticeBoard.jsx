@@ -2,6 +2,7 @@ import React from "react";
 import SubBanner from "../SubBanner/SubBanner";
 import { FaRegLightbulb } from "react-icons/fa";
 import user from "../../../../public/teacher1.png";
+import { IoMdNotifications } from "react-icons/io";
 
 const NoticeBoard = () => {
   return (
@@ -14,13 +15,7 @@ const NoticeBoard = () => {
       <div className="px-[10px] my-[30px]">
         <div className="flex  ">
           <div className="w-[15%]">
-            <div className="h-[50px] w-[50px] rounded-full border-white border-2">
-              <img
-                className="w-full h-full rounded-full"
-                src={user}
-                alt="user aveter"
-              />
-            </div>
+            <IoMdNotifications className="text-[35px]" />
           </div>
           <div className="w-[85%]">
             <h2 className="text-[18px] font-semibold">Personal Leave</h2>
@@ -35,13 +30,7 @@ const NoticeBoard = () => {
         <div className="border-b my-[15px]"></div>
         <div className="flex  ">
           <div className="w-[15%]">
-            <div className="h-[50px] w-[50px] rounded-full border-white border-2">
-              <img
-                className="w-full h-full rounded-full"
-                src={user}
-                alt="user aveter"
-              />
-            </div>
+            <IoMdNotifications className="text-[35px]" />
           </div>
           <div className="w-[85%]">
             <h2 className="text-[18px] font-semibold">Personal Leave</h2>
@@ -56,13 +45,7 @@ const NoticeBoard = () => {
         <div className="border-b my-[15px]"></div>
         <div className="flex  ">
           <div className="w-[15%]">
-            <div className="h-[50px] w-[50px] rounded-full border-white border-2">
-              <img
-                className="w-full h-full rounded-full"
-                src={user}
-                alt="user aveter"
-              />
-            </div>
+            <IoMdNotifications className="text-[35px]" />
           </div>
           <div className="w-[85%]">
             <h2 className="text-[18px] font-semibold">Personal Leave</h2>
