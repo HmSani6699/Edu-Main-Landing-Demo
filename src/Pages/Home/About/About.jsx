@@ -18,11 +18,11 @@ const About = () => {
         {/* =======> Left Content <====== */}
         <div className="lg:w-1/2">
           <img
-            className="w-[350px] h-[350px] rounded-[20px]"
+            className="lg:w-[350px] h-[350px] rounded-[20px]"
             src={about}
             alt="academy"
           />
-          <div className="flex items-end justify-end -mt-[180px]">
+          <div className="flex lg:items-end items-center lg:justify-end justify-center lg:-mt-[180px] mt-[-140px]">
             <div className="w-[230px] h-[240px] rounded-t-full border-[3px] p-[3px]  bg-white rounded-b-[6px] ">
               <img
                 className="w-full h-full rounded-t-full rounded-b-[6px] border-t-2 border-white"
