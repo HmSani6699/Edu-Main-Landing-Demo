@@ -9,6 +9,10 @@ import shap_image from "../../../public/testi-shape-1.png";
 import { FaArrowLeft } from "react-icons/fa";
 import { BiSolidZap } from "react-icons/bi";
 import GalleryCard from "../../Component/GalleryCard/GalleryCard";
+import image1 from "../../../public/gallery/img1.jpg";
+import image2 from "../../../public/gallery/img2.jpeg";
+import image7 from "../../../public/gallery/img7.jpeg";
+import image8 from "../../../public/gallery/img8.jpg";
 
 const Admission = () => {
   const [reviewUserChange, setReviewUserChange] = useState("1");
@@ -398,11 +402,10 @@ const Admission = () => {
 
         {/* ======>  Gallery <===== */}
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-[20px]  mt-[20px]">
-          <GalleryCard />
-          <GalleryCard />
-          <GalleryCard />
-          <GalleryCard />
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px]  mt-[20px]">
+          {[image8, image1, image7]?.map((img) => (
+            <GalleryCard img={img} />
+          ))}
         </div>
       </div>
     </div>

@@ -3,6 +3,15 @@ import { BiSolidZap } from "react-icons/bi";
 import GalleryCard from "../../../Component/GalleryCard/GalleryCard";
 import Reveal from "../../../Component/Reveal/Reveal";
 
+import image1 from "../../../../public/gallery/img1.jpg";
+import image2 from "../../../../public/gallery/img2.jpeg";
+import image3 from "../../../../public/gallery/img3.jpeg";
+import image4 from "../../../../public/gallery/img4.jpeg";
+import image5 from "../../../../public/gallery/img5.jpeg";
+import image6 from "../../../../public/gallery/img6.jpeg";
+import image7 from "../../../../public/gallery/img7.jpeg";
+import image8 from "../../../../public/gallery/img8.jpg";
+
 const Gallery = () => {
   return (
     <div className="max-w-[1100px] mx-auto    lg:mt-[50px]  relative py-[60px] p-[10px]">
@@ -29,14 +38,11 @@ const Gallery = () => {
       {/* ======>  Gallery <===== */}
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-[20px]  mt-[20px]">
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
+        {[image8, image1, image2, image7, image3, image4, image5, image6]?.map(
+          (img) => (
+            <GalleryCard img={img} />
+          )
+        )}
       </div>
     </div>
   );

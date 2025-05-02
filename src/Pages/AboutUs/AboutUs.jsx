@@ -15,6 +15,16 @@ import teacher4 from "../../../public/Teacher/teacher4.png";
 import teacher5 from "../../../public/Teacher/teacher5.png";
 import teacher6 from "../../../public/Teacher/teacher6.png";
 
+import office from "../../../public/office1.jpg";
+import image1 from "../../../public/gallery/img1.jpg";
+import image2 from "../../../public/gallery/img2.jpeg";
+import image3 from "../../../public/gallery/img3.jpeg";
+import image4 from "../../../public/gallery/img4.jpeg";
+import image5 from "../../../public/gallery/img5.jpeg";
+import image6 from "../../../public/gallery/img6.jpeg";
+import image7 from "../../../public/gallery/img7.jpeg";
+import image8 from "../../../public/gallery/img8.jpg";
+
 const AboutUs = () => {
   const [openTabe, setOpenTabe] = useState(1);
 
@@ -322,18 +332,37 @@ const AboutUs = () => {
             <div className="lg:w-[600px] h-[350px]">
               <img
                 className="w-full h-full rounded-[20px]"
-                src={about}
+                src={office}
                 alt=""
               />
             </div>
-            <div className="flex flex-row gap-6 overflow-auto">
+            <div className="flex flex-row gap-6  px-[10px]">
+              {/* <img className="rounded-[20px]" src={about} alt="" />
               <img className="rounded-[20px]" src={about} alt="" />
               <img className="rounded-[20px]" src={about} alt="" />
               <img className="rounded-[20px]" src={about} alt="" />
               <img className="rounded-[20px]" src={about} alt="" />
               <img className="rounded-[20px]" src={about} alt="" />
-              <img className="rounded-[20px]" src={about} alt="" />
-              <img className="rounded-[20px]" src={about} alt="" />
+              <img className="rounded-[20px]" src={about} alt="" /> */}
+
+              {[
+                image8,
+                image1,
+                image2,
+                image7,
+                image3,
+                image4,
+                image5,
+                image6,
+              ]?.map((img) => (
+                <div className="w-[300px] h-[200px]  rounded-[20px] ">
+                  <img
+                    className="rounded-[20px] h-full w-full"
+                    src={img}
+                    alt=""
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
