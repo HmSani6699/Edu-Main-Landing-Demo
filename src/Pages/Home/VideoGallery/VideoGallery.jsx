@@ -23,7 +23,7 @@ const VideoGallery = () => {
               </button>
 
               <h2 className="text-[30px] font-bold my-[20px] text-white">
-                আমাদের একাডেমির ভিডিও গ্যালারি ঘুরে দেখুন
+                Edusadiq ব্যবহার করার বিস্তারিত টিউটোরিয়াল
               </h2>
             </div>
             <div className="lg:flex items-center gap-[20px] relative z-40 hidden ">

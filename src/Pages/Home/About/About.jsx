@@ -6,153 +6,264 @@ import about from "../../../../public/about1.jpg";
 import Reveal from "../../../Component/Reveal/Reveal";
 import { Link } from "react-router-dom";
 import founder from "../../../../public/Teacher/teacher6-2.png";
+import {
+  FaBookOpen,
+  FaClipboardCheck,
+  FaHome,
+  FaMoneyBillWave,
+  FaSms,
+  FaUserCheck,
+} from "react-icons/fa";
+import { FaWandMagicSparkles } from "react-icons/fa6";
 
 const About = () => {
   const [openTabe, setOpenTabe] = useState(1);
   return (
-    <div className="lg:mt-[150px] mt-[220px] relative p-[10px]">
-      <div className="absolute top-[30px] left-0">
+    <div className="lg:mt-[150px] mt-[200px] relative p-[10px] ">
+      {/* <div className="absolute top-[30px] left-0">
         <img className="w-[400px]" src={about_shap} alt="" />
-      </div>
-      <div className="max-w-[900px] mx-auto lg:flex ">
-        {/* =======> Left Content <====== */}
-        <div className="lg:w-1/2">
-          <img
-            className="lg:w-[350px] h-[350px] rounded-[20px]"
-            src={about}
-            alt="academy"
-          />
-          <div className="flex lg:items-end items-center lg:justify-end justify-center lg:-mt-[180px] mt-[-140px]">
-            <div className="w-[230px] h-[240px] rounded-t-full border-[3px] p-[3px]  bg-white rounded-b-[6px] ">
-              <img
-                className="w-full h-full rounded-t-full rounded-b-[6px] border-t-2 border-white"
-                src={founder}
-                alt="academy"
-              />
-            </div>
-          </div>
-        </div>
-        {/* =======> Right Content <====== */}
-        <div className="lg:w-1/2 lg:pl-[50px] mt-[30px] lg:mt-0">
-          <Reveal>
-            {" "}
-            <button className="bg-white flex p-[5px]  rounded-full gap-[8px] pr-[10px] text-[14px]">
-              <div className="bg-[#07a69826] p-[4px] rounded-full">
-                <BiSolidZap className="text-[#07A698]" />
-              </div>
-              একাডেমি সম্পর্কে
-            </button>
-          </Reveal>
-          <Reveal>
-            <h2 className="text-[25px] font-bold my-[15px]">
-              উদ্ভাবনী শিক্ষণ সমাধানের মাধ্যমে ভবিষ্যৎ গঠন
-            </h2>
-          </Reveal>
-
-          <div className="flex items-center gap-[10px] mb-[15px]">
-            {[
-              { id: 1, title: " আমাদের লক্ষ্য" },
-              { id: 2, title: "  আমাদের দৃষ্টিভঙ্গি" },
-              { id: 3, title: "   আমাদের গোল" },
-            ]?.map((item, i) => (
-              <Reveal>
-                <button
-                  key={i}
-                  onClick={() => setOpenTabe(item?.id)}
-                  className={`${
-                    openTabe === item?.id
-                      ? "bg-[#07A698] text-white"
-                      : "text-black bg-white"
-                  } hover:bg-[#07A698] hover:text-white border  rounded-full py-[4px] px-[10px] text-[14px]`}
-                >
-                  {item?.title}
-                </button>
-              </Reveal>
-            ))}
-          </div>
-
+      </div> */}
+      <div className="max-w-[1100px] mx-auto ">
+        <div className="flex items-center justify-center">
           <div>
             <Reveal>
-              {openTabe === 1 ? (
-                <p className="text-[13px] mb-[20px]">
-                  আমাদের লক্ষ্য হলো উচ্চমানের, সহজলভ্য শিক্ষা প্রদান করা যা
-                  জ্ঞান এবং বাস্তব-জগতের প্রয়োগের মধ্যে ব্যবধান পূরণ করে।
-                  বিশেষজ্ঞ-নেতৃত্বাধীন কোর্স, উন্নত প্রযুক্তি এবং একটি সহায়ক
-                  সম্প্রদায়ের মাধ্যমে, আমরা শিক্ষার্থীদের তাদের ক্যারিয়ার এবং
-                  তার পরেও সাফল্যের জন্য ক্ষমতায়িত করি।
-                </p>
-              ) : openTabe === 2 ? (
-                <p className="text-[13px] mb-[20px]">
-                  আমরা একটি অগ্রণী শিক্ষা প্রতিষ্ঠান হিসেবে নিজেদের গড়ে তুলতে
-                  চাই, যেখানে প্রযুক্তিনির্ভর, গবেষণাভিত্তিক এবং জীবনমুখী
-                  শিক্ষার সমন্বয়ে ছাত্রছাত্রীরা আগামী দিনের বিশ্বনাগরিক হিসেবে
-                  প্রস্তুত হবে। আমাদের দৃষ্টিভঙ্গি হলো একটি আলোকিত ও শিক্ষিত
-                  প্রজন্ম গড়ে তোলা।
-                </p>
-              ) : openTabe === 3 ? (
-                <div className="flex flex-col gap-[10px]">
-                  <div className="flex items-center gap-[10px]">
-                    <button className="text-[#07A698] bg-white shadow-lg  h-[30px] w-[30px] rounded-full text-[14px] ">
-                      01
-                    </button>
-                    <p className="text-[14px]">
-                      শিক্ষার্থীদের মধ্যে নেতৃত্ব, সৃজনশীলতা এবং সমস্যা সমাধানের
-                      দক্ষতা তৈরি করা।
-                    </p>
+              <div className="flex items-center justify-center">
+                <button className="bg-white flex p-[5px]  rounded-full gap-[8px] pr-[10px] text-[14px] ">
+                  <div className="bg-[#07a69826] p-[4px] rounded-full">
+                    <BiSolidZap className="text-[#07A698]" />
                   </div>
-
-                  <div className="flex items-center gap-[10px]">
-                    <button className="text-[#07A698] bg-white shadow-lg  h-[30px] w-[30px] rounded-full text-[14px] ">
-                      02
-                    </button>
-                    <p className="text-[14px]">
-                      প্রযুক্তি ও আধুনিক শিক্ষাদান পদ্ধতির ব্যবহার নিশ্চিত করা।
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-[10px]">
-                    <button className="text-[#07A698] bg-white shadow-lg  h-[30px] w-[30px] rounded-full text-[14px] ">
-                      03
-                    </button>
-                    <p className="text-[14px]">
-                      নৈতিকতা ও মূল্যবোধ ভিত্তিক শিক্ষা বিস্তারে কাজ করা।
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-[10px]">
-                    <button className="text-[#07A698] bg-white shadow-lg  h-[30px] w-[30px] rounded-full text-[14px] ">
-                      04
-                    </button>
-                    <p className="text-[14px]">
-                      জাতীয় ও আন্তর্জাতিক পর্যায়ে শিক্ষার মান উন্নয়ন ও স্বীকৃতি
-                      অর্জন।
-                    </p>
-                  </div>
-                </div>
-              ) : null}
+                  আমাদের ফিচারসমূহ
+                </button>
+              </div>
             </Reveal>
-            {openTabe !== 3 && (
-              <div className="flex flex-col gap-[10px]">
-                <div className="flex items-center gap-[10px]">
-                  <button className="text-[#07A698] bg-white shadow-lg  h-[30px] w-[30px] rounded-full text-[14px] ">
-                    01
-                  </button>
-                  <p className="text-[14px]">
-                    মানসম্মত ক্লাস পাঠ্যক্রম এবং বিশেষজ্ঞ শিক্ষক
-                  </p>
+            <Reveal>
+              <h2 className="text-[30px] font-bold my-[20px] text-[#162726] text-center lg:text-start">
+                আপনার প্রতিষ্ঠানের জন্য ডিজিটাল সমাধান
+              </h2>
+            </Reveal>
+          </div>
+        </div>
+        {/* ====card === */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px] mt-[30px]">
+          <Reveal>
+            {" "}
+            <div className="bg-white shadow-md p-[20px] relative z-10 rounded-[15px]">
+              <div className="flex gap-[20px] mb-[20px]">
+                <div className="bg-[#07a69826] text-[#07A698] h-[40px] w-[40px] rounded-full flex items-center justify-center">
+                  <FaUserCheck className="text-[25px]" />
                 </div>
-                <div className="flex items-center gap-[10px]">
-                  <button className="text-[#07A698] bg-white shadow-lg  h-[30px] w-[30px] rounded-full text-[14px]">
-                    02
-                  </button>
-                  <p className="text-[14px]">ছাত্রদের অংশগ্রহণ এবং ধরে রাখা</p>
+                <div>
+                  <h2 className="text-[20px] font-bold">উপস্থিতি</h2>
+                  <p className="text-gray-600">স্মার্ট এটেনডেন্স সিস্টেম</p>
                 </div>
               </div>
-            )}
-            <Link to="/aboutUs">
-              <button className="bg-[#07A698]  text-white rounded-full py-[4px] px-[10px] text-[14px] mt-[25px]">
-                আরও দেখুন
-              </button>
-            </Link>
-          </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                পরীক্ষার ফলাফল SMS এর মাধ্যমে প্রেরণ
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                নোটিশ SMS এর মাধ্যমে প্রেরণ
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                মার্কেটিং SMS প্রেরণ
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                উপস্থিতি SMS নোটিফিকেশন
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                SMS হিস্টরি ট্র্যাকিং
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            {" "}
+            <div className="bg-white shadow-md p-[20px] relative z-10 rounded-[15px]">
+              <div className="flex gap-[20px] mb-[20px]">
+                <div className="bg-[#07a69826] text-[#07A698] h-[40px] w-[40px] rounded-full flex items-center justify-center">
+                  <FaClipboardCheck className="text-[25px]" />
+                </div>
+                <div>
+                  <h2 className="text-[20px] font-bold">পরীক্ষা ব্যবস্থাপনা</h2>
+                  <p className="text-gray-600">
+                    অনলাইন ও অফলাইন পরীক্ষা সিস্টেম
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                অনলাইন ও অফলাইন পরীক্ষা গ্রহণ
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                ফলাফল SMS নোটিফিকেশন
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                অনলাইন রেজাল্ট প্রকাশ
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                Students পারফরম্যান্স মেট্রিক্স
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                পরীক্ষার বিস্তারিত রিপোর্ট
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            {" "}
+            <div className="bg-white shadow-md p-[20px] relative z-10 rounded-[15px]">
+              <div className="flex gap-[20px] mb-[20px]">
+                <div className="bg-[#07a69826] text-[#07A698] h-[40px] w-[40px] rounded-full flex items-center justify-center">
+                  <FaMoneyBillWave className="text-[25px]" />
+                </div>
+                <div>
+                  <h2 className="text-[20px] font-bold">আর্থিক ব্যবস্থাপনা</h2>
+                  <p className="text-gray-600">
+                    সম্পূর্ণ আর্থিক লেনদেন ব্যবস্থাপনা
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                লেনদেন হিস্টরি
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                আর্থিক রিপোর্ট জেনারেট
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                পেমেন্ট নোটিফিকেশন - বকেয়া/পরিশোধিত
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                রশিদ জেনারেট
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                আয়-ব্যয় ব্যবস্থাপনা
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="bg-white shadow-md p-[20px] relative z-10 rounded-[15px]">
+              <div className="flex gap-[20px] mb-[20px]">
+                <div className="bg-[#07a69826] text-[#07A698] h-[40px] w-[40px] rounded-full flex items-center justify-center">
+                  <FaWandMagicSparkles aHome className="text-[25px]" />
+                </div>
+                <div>
+                  <h2 className="text-[20px] font-bold">
+                    ওয়েবসাইট কাস্টমাইজেশন
+                  </h2>
+                  <p className="text-gray-600">
+                    ডায়নামিক ওয়েবসাইট ব্যবস্থাপনা
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                এডমিন প্যানেল থেকে সকল ফিচার নিয়ন্ত্রণ
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                নোটিশ ও ইভেন্ট আপডেট
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                কৃতি শিক্ষার্থী ও শিক্ষক প্রোাইল
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                ফিচার্ড কোর্স ম্যানেজমেন্ট
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                ওয়েবসাইট কনটেন্ট আপডেট
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            {" "}
+            <div className="bg-white shadow-md p-[20px] relative z-10 rounded-[15px]">
+              <div className="flex gap-[20px] mb-[20px]">
+                <div className="bg-[#07a69826] text-[#07A698] h-[40px] w-[40px] rounded-full flex items-center justify-center">
+                  <FaSms className="text-[25px]" />
+                </div>
+                <div>
+                  <h2 className="text-[20px] font-bold">SMS সার্ভিস</h2>
+                  <p className="text-gray-600">
+                    সম্পূর্ণ SMS ব্যবস্থাপনা সিস্টেম
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                পরীক্ষার ফলাফল SMS এর মাধ্যমে প্রেরণ
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                নোটিশ SMS এর মাধ্যমে প্রেরণ
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                মার্কেটিং SMS প্রেরণ
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                উপস্থিতি SMS নোটিফিকেশন
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                SMS হিস্টরি ট্র্যাকিং
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="bg-white shadow-md p-[20px] relative z-10 rounded-[15px]">
+              <div className="flex gap-[20px] mb-[20px]">
+                <div className="bg-[#07a69826] text-[#07A698] h-[40px] w-[40px] rounded-full flex items-center justify-center">
+                  <FaBookOpen className="text-[25px]" />
+                </div>
+                <div>
+                  <h2 className="text-[20px] font-bold">কোর্স ব্যবস্থাপনা</h2>
+                  <p className="text-gray-600">
+                    সম্পূর্ণ কোর্স ম্যানেজমেন্ট সিস্টেম
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                অনলাইন ও অফলাইন কোর্স পরিচালনা
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                কোর্স সংক্রান্ত পরীক্ষা ব্যবস্থাপনা
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                ফেসবুক মার্কেটিং মেটা পিক্সেল সেটআপ
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px] mb-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                কোর্স প্রোগ্রেস ট্র্যাকিং
+              </div>
+              <div className="flex items-center text-gray-600 gap-[10px]">
+                <p className="bg-gray-600 h-[6px] w-[6px] rounded-full"></p>
+                কোর্স মেটেরিয়াল ব্যবস্থাপনা
+              </div>
+            </div>
+          </Reveal>
         </div>
       </div>
     </div>

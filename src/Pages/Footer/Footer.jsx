@@ -1,6 +1,5 @@
-import React from "react";
 import "./Footer.css";
-import logo from "../../../public/school.png";
+import logo from "../../../public/logo2.png";
 import { Link } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa6";
 import { IoLogoTwitter } from "react-icons/io5";
@@ -17,9 +16,9 @@ const Footer = () => {
           <div className="lg:w-[60%] md:w-[100%] w-full lg:flex md:flex ">
             {/* ======> Address <====== */}
             <div className="lg:w-[60%] md:w-[100%] w-full">
-              <div className="flex justify-center items-center lg:block  lg:pl-[90px]">
-                <div className="relative z-20 bg-white w-[100px] rounded-full border-2 border-[#07A698]">
-                  <img className="w-[100px]" src={logo} alt="" />
+              <div className="flex justify-center items-center lg:block  lg:pl-[40px]">
+                <div className="relative z-20  w-[200px] ">
+                  <img className="w-[200px]" src={logo} alt="" />
                 </div>
               </div>
               <p className="text-white text-[18px] mt-[30px] text-center lg:text-left ">

@@ -6,7 +6,7 @@ import staff from "../../../../public/staff.png";
 import section from "../../../../public/section.png";
 import Countdown from "../../../Component/Countdown/Countdown";
 import "./Banner.css";
-import logo from "../../../../public/school.png";
+import logo from "../../../../public/logo2.png";
 import bannerLeft from "../../../../public/bannerLeft.png";
 import bannerRight from "../../../../public/bannerRight.png";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
@@ -27,36 +27,46 @@ const Banner = () => {
           </div>
         </Reveal>
         {/* =====>Middle content <==== */}
-        <div className="text-center ">
+        <div className="text-center">
           <Reveal>
             <div className="flex items-center justify-center">
-              <div className="w-[135px] bg-white rounded-full border-[#07A698] border-2">
-                <img src={logo} alt="" />
+              <div className="w-[205px]">
+                <img src={logo} alt="logo" className="w-full h-full" />
               </div>
             </div>
           </Reveal>
           <Reveal>
-            <h2 className="lg:text-[35px] text-[25px] whitespace-nowrap font-bold text-white lg:mt-[10px] mt-[30px]">
-              আল-কুরআনুল কারীম একাডেমি
+            <h2 className="lg:text-[30px] text-[23px]  font-bold text-white lg:mt-[20px] mt-[30px]">
+              আপনার শিক্ষা-প্রতিষ্ঠান
+              <span className="text-[#07A698] ml-[8px] mr-[8px]">
+                পরিচালনার সকল কাজকে
+              </span>
+              <br className="lg:block hidden" />
+              সহজ এবং Smooth করবে।
             </h2>
           </Reveal>
           <Reveal>
-            <p className="font-semibold text-[#07A698] text-[18px] lg:mt-0 mt-[10px]">
-              পাকুন্ডা, সোনারগাঁ, নারায়ণগঞ্জ
-            </p>
+            <div className=" text-center flex items-center justify-center">
+              <p className="font-semibold text-[#07A698] text-[16px] lg:mt-[20px] mt-[10px]  lg:w-[75%]">
+                আপনি যদি কোনো মাদ্রাসা, স্কুল, কোচিং অথবা যেকোনো
+                শিক্ষা-প্রতিষ্ঠান পরিচালনার দায়িত্বে থাকেন, তাহলে এই
+                সফটওয়্যারটি আপনার জন্য।
+              </p>
+            </div>
           </Reveal>
 
-          <div className="flex items-center justify-center gap-[20px] mt-[20px]">
+          <div className="flex items-center justify-center gap-[20px] lg:mt-[40px] mt-[20px]">
             <Reveal>
               <div className="flex items-center gap-[10px]">
                 <IoCheckmarkDoneCircle className="text-[#07A698]" />
-                <p>গ্রেট লাইফ</p>
+                <p className="underline">ফিচারসমূহ</p>
               </div>
             </Reveal>
             <Reveal>
               <div className="flex items-center gap-[10px]">
-                <IoCheckmarkDoneCircle className="text-[#07A698]" />
-                <p>গ্রেট সার্টিফিকেট</p>
+                <button className="py-[8px] px-[30px] rounded-[8px] bg-[#07A698] text-white font-bold">
+                  ডেমো এক্সেস নিন
+                </button>
               </div>
             </Reveal>
           </div>
@@ -70,6 +80,12 @@ const Banner = () => {
       </div>
       <div>
         <div className=" grid grid-cols-2 lg:grid-cols-4 lg:gap-[20px] gap-[10px] relative z-50  lg:-mt-[140px] -mt-[160px] rounded-[10px] lg:p-[30px] p-[10px] lg:max-w-[790px] mx-auto">
+          <Countdown
+            img={section}
+            number={"05"}
+            title={" টি+"}
+            main_title={"প্রতিষ্ঠান"}
+          />
           <Countdown
             img={student}
             number={"200"}
@@ -86,13 +102,7 @@ const Banner = () => {
             img={staff}
             number={"04"}
             title={"জন+"}
-            main_title={"কর্মী"}
-          />
-          <Countdown
-            img={section}
-            number={"05"}
-            title={" টি+"}
-            main_title={"বিভাগ"}
+            main_title={"অভিভাবক"}
           />
         </div>
       </div>
