@@ -84,12 +84,13 @@ const DemoUser = () => {
   return (
     <div className="max-w-[1200px] mx-auto ">
       <div
-        style={{ maxWidth: "500px", margin: "20px auto", fontFamily: "Arial" }}
+        style={{ maxWidth: "800px", margin: "20px auto", fontFamily: "Arial" }}
+        className="px-[20px]"
       >
         <h2>Pricing Calculator</h2>
 
         {/* Student Count */}
-        <div className="flex items-center gap-[20px]">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-[20px]">
           <input
             type="number"
             value={students}
