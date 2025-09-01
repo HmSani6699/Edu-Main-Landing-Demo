@@ -3,6 +3,7 @@ import "./AboutBanner.css";
 import about from "../../../../public/about1.jpg";
 import video_play from "../../../../public/video_play_green.svg";
 import Reveal from "../../../Component/Reveal/Reveal";
+import logo from "../../../../public/logo1.png";
 
 const AboutBanner = () => {
   return (
@@ -12,15 +13,13 @@ const AboutBanner = () => {
         <div className="max-w-[1200px] mx-auto lg:flex items-center justify-center gap-[30px] px-[10px]">
           <div className="lg:w-1/2">
             <Reveal>
-              <h2 className="text-[35px] text-center lg:text-start text-white font-bold">
-                শিখুন, নয়তো শেখান
-              </h2>
+              <img src={logo} alt="" />
               <p className="text-white mt-[10px] text-[18px] text-center lg:text-start">
-                আল-কুরআনুল কারীম একাডেমি, ২০০০ সালে প্রতিষ্ঠিত বাংলাদেশের
-                সর্বাধুনিক শিক্ষা প্রযুক্তি প্রতিষ্ঠান। দেশজুড়ে সবার জন্য
-                মানসম্মত পড়াশোনা নিশ্চিত করতে অভিজ্ঞ শিক্ষক শিক্ষিকা এবং
-                অত্যাধুনিক প্রযুক্তির সাহায্যে আমরা গড়ে তুলেছি সহজে শেখার এবং
-                সহজে জেতার এক নতুন দুনিয়া!
+                EduSadiq হলো একটি আধুনিক শিক্ষাপ্রতিষ্ঠান ব্যবস্থাপনা
+                প্ল্যাটফর্ম, যেখানে প্রযুক্তির মাধ্যমে শিক্ষা পরিচালনা আরও সহজ,
+                স্মার্ট ও কার্যকর করা হয়। ইতিমধ্যেই ১৫০+ প্রতিষ্ঠান, ২০,০০০+
+                শিক্ষার্থী, ৮০০+ শিক্ষক এবং ১৯,০০০+ অভিভাবক আমাদের সেবার সাথে
+                যুক্ত হয়ে উপকৃত হচ্ছেন।
               </p>
             </Reveal>
           </div>

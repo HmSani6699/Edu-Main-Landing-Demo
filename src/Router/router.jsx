@@ -25,6 +25,7 @@ import TeacherExamResult from "../Pages/Dashboard/Teacher/TeacherMobileDashboard
 import ExamResultDetails from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherExamResult/ExamResultDetails";
 import ExamResultCreateUpdate from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherExamResult/ExamResultCreateUpdate";
 import ExamResultReportView from "../Pages/Dashboard/Teacher/TeacherMobileDashboard/TeacherExamResult/ExamResultReportView";
+import DemoUser from "../DemoUser/DemoUser";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/demouser",
+        element: <DemoUser />,
       },
       {
         path: "login",

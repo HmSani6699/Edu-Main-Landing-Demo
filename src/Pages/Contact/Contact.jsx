@@ -11,7 +11,7 @@ const Contact = () => {
         <IoHomeOutline className="text-[#1d5276]" />
         <p className="text-[#1d5276]">হোম</p>
         <IoIosArrowForward className="text-[#1d5276]" />
-        <p className="text-gray-500">আমাদের সম্পর্কে</p>
+        <p className="text-gray-500">যোগাযোগ</p>
       </div>
       {/* =====> Menu Derication <==== */}
       <div className="contact_us_bg bg-[#F4FBFF]">
@@ -22,7 +22,7 @@ const Contact = () => {
             </h1>
             <p className="text-[#464A53] text-[21px] md:text-[14px] lg:text-[18px] font-[400] lg:font-[500] leading-[25px] md:leading-[28px] w-[343px] md:w-[580px] lg:w-[883px] mx-auto">
               যে কোনো প্রয়োজনে যোগাযোগ করতে সরাসরি আমাদের অফিস ভিজিট করতে
-              পারেন। তাছাড়া হটলাইন নম্বরে কল করে জেনে নিতে পারেন ট্রেইনিং
+              পারেন। তাছাড়া হটলাইন নম্বরে কল করে জেনে নিতে পারেন ওয়েবসাইট
               সংক্রান্ত যেকোনো তথ্য। এছাড়াও উল্লেখিত মেইলে কিংবা ফেসবুক
               ম্যাসেঞ্জারেও নক দিতে পারেন।
             </p>
@@ -47,7 +47,7 @@ const Contact = () => {
           <div className="flex flex-col gap-5 justify-center">
             <div>
               <h1 className="text-[#2E3138] text-[20px] md:text-[28px] font-[600] lg:font-[700] leading-[28px] md:leading-[36px] ">
-                পাকুন্ডা সরকারি প্রাথমিক বিদ্যালয়
+                এডুকেশন ম্যানেজমেন্ট ওয়েবসাইট
               </h1>
               <h1 className="text-[#2E3138] text-[14px] md:text-[18px] font-[400] lg:font-[500] leading-[18px] md:leading-[28px] ">
                 পাকুন্ডা, সোনারগাঁ, নারায়ণগঞ্জ
@@ -58,10 +58,10 @@ const Contact = () => {
                 হেল্পলাইন
               </h1>
               <h1 className="text-[#2E3138] text-[14px] md:text-[18px] font-[400] lg:font-[500] leading-[18px] md:leading-[28px] ">
-                Phone: 01996359111
+                Phone: 01830-630365
               </h1>
               <h1 className="text-[#2E3138] text-[14px] md:text-[18px] font-[400] lg:font-[500] leading-[18px] md:leading-[28px] ">
-                E-mail: support@gamil.com
+                E-mail: info.edusadiq@gmail.com
               </h1>
             </div>
             <div>

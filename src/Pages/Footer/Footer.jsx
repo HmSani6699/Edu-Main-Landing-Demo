@@ -1,29 +1,52 @@
 import "./Footer.css";
 import logo from "../../../public/logo2.png";
-import { Link } from "react-router-dom";
+
 import { FaFacebookF } from "react-icons/fa6";
 import { IoLogoTwitter } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import Reveal from "../../Component/Reveal/Reveal";
+import { Link } from "react-router-dom";
+import DemoPage from "../../assets/DemoPage/DemoPage";
+import { useState } from "react";
 
 const Footer = () => {
+  const [isDemoOpen, setIsDemoOpen] = useState(false);
   return (
-    <Reveal>
-      <div className="footer_container text-white w-full lg:mt-[50px] relative p-[15px] bg-[#1e567b]">
-        <div className="footer_box h-full w-full  top-0 left-0 opacity-[0.30] absolute"></div>
-        <div className="max-w-[1280px] mx-auto relative z-10 py-[50px] lg:px-0 px-[15px] lg:flex">
-          <div className="lg:w-[60%] md:w-[100%] w-full lg:flex md:flex ">
-            {/* ======> Address <====== */}
-            <div className="lg:w-[60%] md:w-[100%] w-full">
-              <div className="flex justify-center items-center lg:block  lg:pl-[40px]">
+    <div>
+      <Reveal>
+        <div className="contact_footer h-[200px] mt-[30px] lg:mt-[50px] flex items-center justify-center w-full  ">
+          <div className=" lg:flex items-center justify-between lg:w-[1100px] w-full lg:text-left text-center">
+            <div>
+              <h2 className="text-[#07A698] lg:text-[35px] text-[20px] font-bold lg:text-left text-center">
+                যেকোনো প্রয়োজনে যোগাযোগ করুন এই নম্বরে
+              </h2>
+              <p className="lg:text-[25px] text-[20px]">01830-630365</p>
+            </div>
+            <button
+              onClick={() => setIsDemoOpen(true)}
+              className="py-[8px] px-[30px] rounded-[8px] bg-[#07A698] text-white font-bold btn btn-pulse mt-[20px] lg:mt-0"
+            >
+              ডেমো এক্সেস নিন
+            </button>
+          </div>
+        </div>
+      </Reveal>
+
+      <Reveal>
+        <div className="footer_container text-white w-full  relative p-[15px] bg-[#1e567b] ">
+          <div className="footer_box h-full w-full  top-0 left-0 opacity-[0.30] absolute"></div>
+          <div className="lg:flex items-center justify-between lg:px-[50px] lg:py-[30px]">
+            <div className=" w-full mt-[40px] lg:mt-0 ">
+              <div className="flex justify-center items-center lg:block   gap-[20px]">
                 <div className="relative z-20  w-[200px] ">
                   <img className="w-[200px]" src={logo} alt="" />
                 </div>
               </div>
-              <p className="text-white text-[18px] mt-[30px] text-center lg:text-left ">
-                Address: 8th & 13th Floor, 52/1 Hasan Holdings <br /> Limited,
-                New Eskaton Road, Dhaka - 1000
+              <p className="text-white text-[18px] mt-[30px]  lg:pr-[60px] text-center lg:text-left">
+                Edusadiq মাদ্রাসা ম্যানেজমেন্ট সফটওয়্যার। ছাত্র, শিক্ষক, হিসাব
+                ও ফলাফল ব্যবস্থাপনা সবকিছু এখন এক প্ল্যাটফর্মে সহজ ও
+                সাশ্রয়ীভাবে।
               </p>
               {/* ====> Social link <===== */}
               <div className="flex justify-center lg:justify-start gap-[15px] mt-[30px]">
@@ -41,89 +64,52 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            {/* ======> Quick Info <====== */}
-            <div className="lg:w-[40%] md:hidden lg:block w-full mt-[50px] lg:mt-0 md:mt-0">
-              <h2 className="text-[25px] font-semibold mb-[30px] ">
-                Quick Info
+
+            {/*  */}
+
+            <div className=" w-full whitespace-nowrap mt-[40px] lg:mt-0">
+              <h2 className="text-[25px] font-semibold  mb-[20px]">
+                দ্রুত তথ্য
               </h2>
 
               <p className="text-[18px] mb-[10px] ">
-                <Link>Technologies</Link>
+                <Link to={"/"}>হোম </Link>
               </p>
               <p className="text-[18px] mb-[10px] ">
-                <Link>Our Team</Link>
+                <Link to={"aboutUs"}>আমাদের সম্পর্কে</Link>
               </p>
               <p className="text-[18px] mb-[10px] ">
-                <Link>Portfolio</Link>
-              </p>
-              <p className="text-[18px] mb-[10px] ">
-                <Link>Career</Link>
-              </p>
-            </div>
-          </div>
-          <div className="lg:w-[40%] md:w-[100%] w-full lg:flex md:flex ">
-            {/* =====> Md Device er jonno <===== */}
-            <div className="lg:w-[40%] hidden lg:hidden md:block w-full mt-[50px] lg:mt-0">
-              <h2 className="text-[25px] font-semibold mb-[30px] ">
-                Quick Info
-              </h2>
-              <p className="text-[18px] mb-[10px] ">
-                <Link>Technologies</Link>
-              </p>
-              <p className="text-[18px] mb-[10px] ">
-                <Link>Our Team</Link>
-              </p>
-              <p className="text-[18px] mb-[10px] ">
-                <Link>Portfolio</Link>
-              </p>
-              <p className="text-[18px] mb-[10px] ">
-                <Link>Career</Link>
-              </p>
-            </div>
-
-            {/* ======> Services <====== */}
-            <div className="lg:w-[50%] w-full mt-[50px] lg:mt-0 ">
-              <h2 className="text-[25px] font-semibold mb-[30px] ">Services</h2>
-              <p className="text-[18px] mb-[10px] ">
-                <Link>Digital/Social Marketing</Link>
-              </p>
-              <p className="text-[18px] mb-[10px] ">
-                <Link>Affordable SEO</Link>
-              </p>
-              <p className="text-[18px] mb-[10px] ">
-                <Link>e-Commerce</Link>
-              </p>
-              <p className="text-[18px] mb-[10px] ">
-                <Link>HRM System</Link>
+                <Link to={"contact"}>যোগাযোগ</Link>
               </p>
             </div>
             {/* ======> Contact us <====== */}
-            <div className="lg:w-[50%] w-full mt-[50px] lg:mt-0 ">
-              <h2 className="text-[25px] font-semibold mb-[30px] ">
-                Contact with us
+            <div className="  whitespace-nowrap mt-[40px] lg:mt-0">
+              <h2 className="text-[25px] font-semibold mb-[20px] ">
+                যোগাযোগ করুন
               </h2>
               <p className="text-[18px] mb-[10px] ">
-                <span>Mobile: </span> 01996359111
+                <span>ফোন: </span> 01830-630365
               </p>
               <p className="text-[18px] mb-[10px] ">
-                <span>Email: </span> sadiq@gmail.com
+                <span>ইমেইল: </span> info.edusadiq@gmail.com
               </p>
+
               <p className="text-[18px] mb-[10px] ">
-                <span>EMS QUERY : </span> 01996359111
-              </p>
-              <p className="text-[18px] mb-[10px] ">
-                <span>SUPPORT : </span> 01996359111
+                <span>সাপোর্ট : </span> 01830-630365
               </p>
             </div>
           </div>
+          {/*  */}
+          <div className="border-t-[1px] border-[#ffffff26] py-[20px]">
+            <p className="text-center text-[14px]">
+              © Edusadiq. All Rights Reserved.
+            </p>
+          </div>
         </div>
-        <div className="border-t-[1px] border-[#ffffff26] py-[20px]">
-          <p className="text-center text-[14px]">
-            © Microhub It Solution. All Rights Reserved.
-          </p>
-        </div>
-      </div>
-    </Reveal>
+      </Reveal>
+      {/* ==== Demo pag e=== */}
+      {isDemoOpen ? <DemoPage setIsDemoOpen={setIsDemoOpen} /> : ""}
+    </div>
   );
 };
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Banner.css";
 import student from "../../../../public/student.png";
 import teacher from "../../../../public/teacher.png";
@@ -14,8 +14,11 @@ import Reveal from "../../../Component/Reveal/Reveal";
 
 import img1 from "../../../../public/im1.png";
 import img2 from "../../../../public/im2.png";
+import { Link } from "react-router-dom";
+import DemoPage from "../../../assets/DemoPage/DemoPage";
 
 const Banner = () => {
+  const [isDemoOpen, setIsDemoOpen] = useState(false);
   return (
     <div className=" h-[560px] ">
       <div className="bg-[#1e567bb5] h-full lg:flex   text-white hero-section  pt-[50px] ">
@@ -47,7 +50,7 @@ const Banner = () => {
           </Reveal>
           <Reveal>
             <div className=" text-center flex items-center justify-center">
-              <p className="font-semibold text-[#07A698] text-[16px] lg:mt-[20px] mt-[10px]  lg:w-[75%]">
+              <p className="font-semibold text-white text-[16px] lg:mt-[20px] mt-[10px]  lg:w-[75%]">
                 আপনি যদি কোনো মাদ্রাসা, স্কুল, কোচিং অথবা যেকোনো
                 শিক্ষা-প্রতিষ্ঠান পরিচালনার দায়িত্বে থাকেন, তাহলে এই
                 সফটওয়্যারটি আপনার জন্য।
@@ -57,14 +60,19 @@ const Banner = () => {
 
           <div className="flex items-center justify-center gap-[20px] lg:mt-[40px] mt-[20px]">
             <Reveal>
-              <div className="flex items-center gap-[10px]">
-                <IoCheckmarkDoneCircle className="text-[#07A698]" />
-                <p className="underline">ফিচারসমূহ</p>
-              </div>
+              <Link to={"#feature"}>
+                <div className="flex items-center gap-[10px]">
+                  <IoCheckmarkDoneCircle className="text-[#07A698]" />
+                  <p className="underline">ফিচারসমূহ</p>
+                </div>
+              </Link>
             </Reveal>
             <Reveal>
-              <div className="flex items-center gap-[10px]">
-                <button className="py-[8px] px-[30px] rounded-[8px] bg-[#07A698] text-white font-bold">
+              <div>
+                <button
+                  onClick={() => setIsDemoOpen(true)}
+                  className="py-[8px] px-[30px] rounded-[8px] bg-[#07A698] text-white font-bold btn btn-pulse m-[10px]"
+                >
                   ডেমো এক্সেস নিন
                 </button>
               </div>
@@ -82,30 +90,32 @@ const Banner = () => {
         <div className=" grid grid-cols-2 lg:grid-cols-4 lg:gap-[20px] gap-[10px] relative z-50  lg:-mt-[140px] -mt-[160px] rounded-[10px] lg:p-[30px] p-[10px] lg:max-w-[790px] mx-auto">
           <Countdown
             img={section}
-            number={"05"}
+            number={"150"}
             title={" টি+"}
             main_title={"প্রতিষ্ঠান"}
           />
           <Countdown
             img={student}
-            number={"200"}
+            number={"20000"}
             title={"জন+"}
             main_title={"শিক্ষার্থী"}
           />
           <Countdown
             img={teacher}
-            number={"10"}
+            number={"800"}
             title={"জন+"}
             main_title={"শিক্ষক"}
           />
           <Countdown
             img={staff}
-            number={"04"}
+            number={"19000"}
             title={"জন+"}
             main_title={"অভিভাবক"}
           />
         </div>
       </div>
+      {/* ==== Demo pag e=== */}
+      {isDemoOpen ? <DemoPage setIsDemoOpen={setIsDemoOpen} /> : ""}
     </div>
   );
 };

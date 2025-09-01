@@ -11,10 +11,10 @@ const Countdown = ({ img, number, title, main_title }) => {
           <img className="w-[50px]" src={img} alt="student" />
         </div>
         <div className="text-center mt-[10px]">
-          <h2 className="text-[#1d5276] text-[25px] font-bold">
+          <h2 className="text-[#1d5276] text-[20px] lg:text-[22px] font-bold">
             <ReactOdometer value={number} format="(.ddd),dd" /> {title}
           </h2>
-          <p className="text-[#1d5276]">{main_title}</p>
+          <p className="text-[#1d5276] ">{main_title}</p>
         </div>
       </div>
     </Reveal>

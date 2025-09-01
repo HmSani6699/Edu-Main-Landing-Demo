@@ -2,6 +2,10 @@
   background-image: url("../../../public/footer-bg.png");
 }
 
+.contact_footer {
+  background-image: url("../../../public/footer1.jpg");
+}
+
 /* .footer_box {
   background: rgb(2, 6, 23);
   background: linear-gradient(

@@ -1,28 +1,17 @@
-import React, { useState } from "react";
-import academy from "../../../../public/teacher.jpg";
 import { BiSolidZap } from "react-icons/bi";
-import about_shap from "../../../../public/about_shape.png";
-import about from "../../../../public/about1.jpg";
 import Reveal from "../../../Component/Reveal/Reveal";
-import { Link } from "react-router-dom";
-import founder from "../../../../public/Teacher/teacher6-2.png";
 import {
   FaBookOpen,
   FaClipboardCheck,
-  FaHome,
   FaMoneyBillWave,
   FaSms,
   FaUserCheck,
 } from "react-icons/fa";
 import { FaWandMagicSparkles } from "react-icons/fa6";
 
-const About = () => {
-  const [openTabe, setOpenTabe] = useState(1);
+const Feature = () => {
   return (
-    <div className="lg:mt-[150px] mt-[200px] relative p-[10px] ">
-      {/* <div className="absolute top-[30px] left-0">
-        <img className="w-[400px]" src={about_shap} alt="" />
-      </div> */}
+    <div id="feature" className="lg:mt-[150px] mt-[225px] relative p-[10px] ">
       <div className="max-w-[1100px] mx-auto ">
         <div className="flex items-center justify-center">
           <div>
@@ -37,7 +26,7 @@ const About = () => {
               </div>
             </Reveal>
             <Reveal>
-              <h2 className="text-[30px] font-bold my-[20px] text-[#162726] text-center lg:text-start">
+              <h2 className="lg:text-[30px] text-[25px] font-bold my-[20px] text-[#162726] text-center lg:text-start">
                 আপনার প্রতিষ্ঠানের জন্য ডিজিটাল সমাধান
               </h2>
             </Reveal>
@@ -270,4 +259,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Feature;
