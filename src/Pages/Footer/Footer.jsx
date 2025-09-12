@@ -15,25 +15,6 @@ const Footer = () => {
   return (
     <div>
       <Reveal>
-        <div className="contact_footer h-[200px] mt-[30px] lg:mt-[50px] flex items-center justify-center w-full  ">
-          <div className=" lg:flex items-center justify-between lg:w-[1100px] w-full lg:text-left text-center">
-            <div>
-              <h2 className="text-[#07A698] lg:text-[35px] text-[20px] font-bold lg:text-left text-center">
-                যেকোনো প্রয়োজনে যোগাযোগ করুন এই নম্বরে
-              </h2>
-              <p className="lg:text-[25px] text-[20px]">01830-630365</p>
-            </div>
-            <button
-              onClick={() => setIsDemoOpen(true)}
-              className="py-[8px] px-[30px] rounded-[8px] bg-[#07A698] text-white font-bold btn btn-pulse mt-[20px] lg:mt-0"
-            >
-              ডেমো এক্সেস নিন
-            </button>
-          </div>
-        </div>
-      </Reveal>
-
-      <Reveal>
         <div className="footer_container text-white w-full  relative p-[15px] bg-[#1e567b] ">
           <div className="footer_box h-full w-full  top-0 left-0 opacity-[0.30] absolute"></div>
           <div className="lg:flex items-center justify-between lg:px-[50px] lg:py-[30px]">

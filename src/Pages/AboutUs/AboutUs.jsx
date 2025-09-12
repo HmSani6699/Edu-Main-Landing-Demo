@@ -114,10 +114,14 @@ const AboutUs = () => {
       {/* ====> Funder <===== */}
       <div className=" w-full md:w-[754px] lg:w-[813px] mx-auto   mt-[50px]  px-[10px]">
         <Reveal>
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10 border-2  border-[#53DFC3] bg-[#F5F5F5] rounded-[12px]">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10 lg:border-2  border-[#53DFC3] bg-[#F5F5F5] rounded-[12px]">
             <div className="w-full ">
               <Reveal>
-                <img className="h-[340px] w-full" src={author} alt="" />
+                <img
+                  className="h-[340px] w-full lg:rounded-l-[10px]"
+                  src={author}
+                  alt=""
+                />
               </Reveal>
             </div>
             <div className="flex flex-col gap-4">
@@ -150,7 +154,7 @@ const AboutUs = () => {
       </div>
 
       {/* =====> Instructor <====== */}
-      {/* <div className="w-full lg:max-w-[1096px] mx-auto py-10  bg-[#F5F5F5] rounded-[10px] px-5 relative lg:mt-[40px]">
+      <div className="w-full lg:max-w-[1096px] mx-auto py-10  bg-[#F5F5F5] rounded-[10px] px-5 relative lg:mt-[40px] mb-[50px]">
         <div className="mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 ">
           {allTeachers?.map((item, i) => (
             <Reveal>
@@ -180,7 +184,7 @@ const AboutUs = () => {
             </button>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

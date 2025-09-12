@@ -53,3 +53,9 @@
     transform: scale(1);
   }
 }
+
+/* About image  */
+.bg_image {
+  background-image: url("../public/about_shape.png");
+  background-repeat: no-repeat;
+}

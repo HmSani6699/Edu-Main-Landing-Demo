@@ -50,7 +50,34 @@ const ClassCurriculum = () => {
           <img className="w-[500px]" src={shap_image} alt="shape" />
         </div>
         {/* ======> <====== */}
-        video
+        <div>
+          <Reveal>
+            <div className="flex items-center justify-center">
+              <button className="bg-white flex p-[5px]  rounded-full gap-[8px] pr-[10px] text-[14px] ">
+                <div className="bg-[#07a69826] p-[4px] rounded-full">
+                  <BiSolidZap className="text-[#07A698]" />
+                </div>
+                ক্লাস পাঠ্যক্রম
+              </button>
+            </div>
+          </Reveal>
+          <Reveal>
+            <h2 className="text-[30px] font-bold my-[20px] text-white text-center">
+              ফিচার ক্লাস কারিকুলাম
+            </h2>
+          </Reveal>
+        </div>
+
+        {/* ======>Curriculum card <======= */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px] mt-[10px] lg:mt-[40px]">
+          {curriculums?.map((item) => (
+            <CurriCulumCard
+              icon={item?.icon}
+              name={item?.name}
+              subject={item?.subject}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
